@@ -1,0 +1,40 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
+
+button {
+  background: initial;
+}
+
+button:focus{
+  outline: 0;
+}
+
+button::after{
+  border: none;
+}
+.bc_gray{
+  background-color: #F8F8F8;
+}
+.font_gray1{
+  color: #8B8F98;
+}
+.font_gray2{
+  color: #9C9C9C;
+}
+.bc_green{
+  background-color: #77C82B;
+}
+.bc_orange{
+  background-color: #FE7D67;
+}
+.bc_greenbule{
+  background-color: #0FCAB5;
+}
+.font_white{
+  color: white;
+}

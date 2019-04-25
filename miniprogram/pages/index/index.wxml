@@ -1,0 +1,57 @@
+<view class=".container" hover-class="none" hover-stop-propagation="false">
+    <view class="content" hover-class="none" hover-stop-propagation="false">
+        <view class="headtitle">
+            咨询医生
+        </view>
+        <view class="quality bc_gray" hover-class="none" hover-stop-propagation="false">
+            <view class="quality_center">
+                <view class="quality_h1 font_gray1 flexcenter" hover-class="none" hover-stop-propagation="false">
+                    <text space="nbsp">严格质控 双重审核</text>
+                </view>
+                <view class="doctor font_gray2" hover-class="none" hover-stop-propagation="false">
+                    <view>三甲以上主治医师</view>
+                    <view>专家团队双重审核</view>
+                </view>
+            </view>
+            <image class="menu_right" src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/right.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+        <view class="options" hover-class="none" hover-stop-propagation="false">
+            <view class="option">
+                <view class="options_image option_picture"> 
+                    <image  src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/image_text.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                </view>
+                <view class="option_text">
+                    <view class="option_text1">图文咨询</view>
+                    <view class="font_gray2">快速匹配医生  平均1小时回复</view>
+                </view>
+                <image class="menu_right" src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/right.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+            </view>
+        </view>
+        <view class="options" hover-class="none" hover-stop-propagation="false">
+            <view class="option">
+                <view class="options_image option_voice"> 
+                    <image  src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/voice.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                </view>
+                <view class="option_text">
+                    <view class="option_text1">语音急症</view>
+                    <view class="font_gray2">一对一实时语音  平均60秒接通</view>
+                </view>
+                <image class="menu_right" src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/right.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+            </view>
+        </view>
+        <view class="options" hover-class="none" hover-stop-propagation="false">
+            <view class="option">
+                <view class="options_image option_doctor"> 
+                    <image src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/plus_sign.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                </view>
+                <view class="option_text">
+                    <view class="option_text1">问医生</view>
+                    <view class="font_gray2">按科室挑选合适的医生</view>
+                </view>
+                <image class="menu_right" src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/right.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+            </view>
+        </view>
+    </view>
+</view>
+  
+  
