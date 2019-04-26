@@ -1,0 +1,27 @@
+.main{
+background-color: #3A5FCD;
+}
+.myTitle{
+    height: 90rpx;
+    display: flex;
+    padding: 10rpx;
+    color: #ffffff;
+    font-size: 35rpx;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    margin-left: 30rpx;
+    font-weight: 500;
+    flex: 7;
+}
+.navi{
+    flex: 1;
+    font-size: 30rpx;
+}
+.my{
+    flex: 1;
+    margin-left: 60rpx;
+    margin-right: 10rpx;
+    font-size: 30rpx;
+}

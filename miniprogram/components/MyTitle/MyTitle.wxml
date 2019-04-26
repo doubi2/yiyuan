@@ -1,0 +1,33 @@
+<view class='main'>
+<view class="myTitle">
+    <!-- logo区 -->
+    <view class="logo">
+        好医愿在线
+    </view>
+    <!-- 导航 -->
+    <view class="navi">
+        导航
+    </view>
+    <!-- 我的 -->
+    <navigator class="my">
+        我的
+    </navigator>
+</view>
+<!-- 搜索框 转跳到search页面 -->
+<navigator  url="../../pages/search/search" open-type="navigate" hover-class="none">
+    <van-search
+            background="#3A5FCD"
+            value="{{ value }}"
+            placeholder="疾病 医生 科室 医院"
+            input-align="center"
+            shape="round"
+            use-action-slot
+            bind:search="onSearch"
+        >
+    </van-search>
+</navigator>
+
+
+</view>
+
+  

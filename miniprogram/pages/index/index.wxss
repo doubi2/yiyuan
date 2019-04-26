@@ -5,6 +5,7 @@ image{
 .content{
     width: 90%;
     margin: 0 auto;
+    height: 1500rpx;
 }
 .flexcenter{
     display: flex;
@@ -42,8 +43,13 @@ image{
     font-size: 25rpx;
     padding-bottom: 8rpx;
 }
-.doctor :nth-of-type(2){
-    margin-left: 70rpx;
+.doctor image{
+    width: 25rpx;
+    height: 25rpx;
+    margin-right: 8rpx;
+}
+.doctor image:nth-of-type(2){
+    margin-left: 50rpx;
 }
 .options{
     margin-top: 50rpx;
@@ -88,17 +94,26 @@ image{
     width: 60rpx;
     height: 60rpx;
 }
-.option_picture{
+.option_green{
     background: linear-gradient(#A8E86E, #76C52C);
 }
-.option_voice{
+.option_pink{
     background: linear-gradient(#FA9F81, #FF7B66);
 }
-.option_doctor{
+.option_greenblue{
     background: linear-gradient(#5ADECB, #0BCBB4);
 }
 .menu_right{
     width: 40rpx;
     height: 40rpx;
     margin-left: 15rpx;
+}
+.option_blue{
+    background: linear-gradient(rgb(26, 78, 190), rgb(14, 58, 179));
+}
+.option_violet{
+    background: linear-gradient(#9F79EE, #9B30FF);
+}
+.option_orange{
+    background: linear-gradient(#FFA54F, #FFA500);
 }

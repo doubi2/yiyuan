@@ -1,13 +1,46 @@
 {
     "pages": [
-        "pages/index/index"
+        "pages/index/index",
+        "pages/doctor/doctor",
+        "pages/myinfo/myinfo"
     ],
     "window": {
         "backgroundColor": "#ffffff",
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#ffffff",
-        "navigationBarTitleText": "好医愿",
+        "navigationBarTitleText": "好医疗",
         "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#6B6B6B",
+        "selectedColor": "#436EEE",
+        "backgroundColor": "#ffffff",
+        "borderStyle": "white",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "icons/index.png",
+                "selectedIconPath": "icons/index_active.png"
+            },
+            {
+                "pagePath": "pages/doctor/doctor",
+                "text": "社区医生",
+                "iconPath": "icons/my_doctor.png",
+                "selectedIconPath": "icons/my_doctor_active.png"
+            },
+            {
+                "pagePath": "pages/myinfo/myinfo",
+                "text": "我",
+                "iconPath": "icons/my.png",
+                "selectedIconPath": "icons/my_active.png"
+            }
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
     },
     "sitemapLocation": "sitemap.json"
 }

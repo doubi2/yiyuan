@@ -1,0 +1,6 @@
+<view class="private_doctor">
+<view class="imagesize">
+        <image src="../../images/doctor_2.png"></image>
+    </view>
+    <view class="introduce">三喜医生全程为你服务</view>
+</view>

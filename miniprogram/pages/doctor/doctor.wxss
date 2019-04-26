@@ -1,0 +1,26 @@
+.private_doctor{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;/*垂直居中*/
+    justify-content: center;/*水平居中*/
+}
+.imagesize{
+    width: 280rpx;
+    height: 280rpx;
+    background-color: #0000;
+}
+.imagesize image{
+    border-radius: 140px;
+    width: 100%;
+    height: 100%;
+}
+.introduce{
+    margin-top: 50rpx;
+    font-weight: 800;
+    font-size: 45rpx;
+    color: #436EEE;
+    margin-bottom: 30%;
+}

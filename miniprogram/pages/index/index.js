@@ -5,7 +5,38 @@ Page({
      * 页面的初始数据
      */
     data: {
+        options:[
+            {
+                id: 0,
+                title: "问诊",
+                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/relation.png",
+                introduce: "根据您的需求，便捷问诊。",
+                className: "option_greenblue"
+            },
+            {
+                id: 2,
+                title: "健康管理",
+                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/health.png",
+                introduce: "为您定制化服务",
+                className: "option_green"
+            },
+            {
+                id: 3,
+                title: "用药咨询",
+                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/image_text.png",
+                introduce: "您的症状，决定您的用药。",
+                className: "option_pink"
+            },
+            {
+                id: 4,
+                title: "药品推荐",
+                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/drug.png",
+                introduce: "各类药品，海量选购",
+                className: "option_violet"
+            },
+            
 
+        ]
     },
 
     /**
