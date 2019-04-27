@@ -1,35 +1,79 @@
-<view class=".container" hover-class="none" hover-stop-propagation="false">
-    <view class="content" hover-class="none" hover-stop-propagation="false">
-        <view class="headtitle">
-            咨询医生
-        </view>
-        <view class="quality bc_gray" hover-class="none" hover-stop-propagation="false">
-            <view class="quality_center">
-                <view class="quality_h1 font_gray1 flexcenter" hover-class="none" hover-stop-propagation="false">
-                    <text space="nbsp">严格质控 双重审核</text>
-                </view>
-                <view class="doctor font_gray2" hover-class="none" hover-stop-propagation="false">
-                    <image src='cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/doctor.png' mode="aspectFit|aspectFill|widthFix"></image>
-                    <view>从业十多年专业医生</view>
-                    <image src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/specialist.png" mode="aspectFit|aspectFill|widthFix"></image>
-                    <view>专家团队双重审核</view>
+<view class="head">
+    <!-- 公共头部 -->
+    <MyTitle></MyTitle>
+    <!-- 轮播图 -->
+    <view class="swiper-main">
+        <swiper class="swiper-1" autoplay="{{autoplay}}" indicator-dots="{{indicator_dots}}" duration="{{duration}}" interval="{{interval}}" circular="{{circular}}" indicator-color="{{indicator_color}}" indicator-active-color="{{indicator_active_color}}">
+            <block wx:for="{{imgUrls}}" wx:key="{{key}}">
+                <swiper-item>
+                    <image src="{{item}}" mode="scaleToFill" class="slide-image" width="100%" height="100%" />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <!-- 中间导航部分 -->
+    <view class="navi-main">
+        <view class="navi-title">
+            <view class="navi-context">
+                <view class="doctor" wx:for="{{main_functions}}" wx:key="{{index}}" data-id="{{item.id}}" id="{{item.id}}" bindtap="bindNaviTap" hover-class="none">
+                    <view class="imagesize">
+                        <image src="{{item.imagePath}}" class="avatar"></image>
+                    </view>
+                    <view class='font navi-text-title'>{{item.title}}</view>
+                    <view class='font navi-text-text'>{{item.introduce}}</view>
                 </view>
             </view>
-            <image class="menu_right" src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/right.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
         </view>
-        <navigator class="options" wx:for="{{options}}" wx:key="{{index}}" target="" url="" hover-class="navigator-hover" open-type="navigate">
-            <view class="option">
-                <view class="options_image {{item.className}}"> 
-                    <image src="{{item.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-                </view>
-                <view class="option_text">
-                    <view class="option_text1">{{item.title}}</view>
-                    <view class="font_gray2">{{item.introduce}}</view>
-                </view>
-                <image class="menu_right" src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/right.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    </view>
+    <!-- 功能区块 -->
+    <view class="functions" hover-class="none" hover-stop-propagation="false">
+        <navigator class="functions_wrap" wx:for="{{functions}}" wx:key="{{index}}"  target="" url="" hover-class="none" open-type="navigate">
+            <view class="functins_item">
+                <view class='font functins_item_title'>{{item.title}}</view>
+                <view class='font functins_item_context'>{{item.context}}</view>
             </view>
         </navigator>
     </view>
+    <!-- 极速问诊区 -->
+    <view class="inquiry bc_gray1">
+        <view class="inquiry_main bc_white">
+            <view class="inquiry_head" hover-class="none" hover-stop-propagation="false">
+                <view>极速问诊</view>
+                <view class="setcenter inquiry_button">限时免费</view>
+                <view class="setcenter inquiry_button">接诊快</view>
+            </view>
+            <view class="introduce">
+                <view class="video" wx:for="{{inquiry_introduce}}" wx:key="{{index}}">
+                    <image src="{{item.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                    <view class="video_text">
+                        <view>{{item.title}}</view>
+                        <view class="font_gray2">{{item.introduce}}</view>
+                    </view>
+                </view>
+            </view>
+            <view class="setcenter apply">
+                <navigator class="setcenter apply_botton" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                    立即申请
+                </navigator>
+            </view>
+            <view class="dynamic">
+                <view class="dynamic_title">就诊动态</view>
+                <view class="dynamic_main">
+                    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="5000" duration="2000">
+                        <block wx:for="{{dynamic}}" wx:key="{{index}}">
+                            <swiper-item >
+                                <block wx:for="{{item.main}}" wx:key="{{item.main.id}}" wx:for-item="info">
+                                    <view class="dynamic_content">
+                                        <view class="font_gray2">{{info.type}}</view>
+                                        <view>{{info.content}}医生 接诊患者：{{info.patient}}</view>
+                                        <view class="font_gray2">{{info.time}}</view>
+                                    </view>
+                                </block>
+                            </swiper-item>
+                        </block>
+                    </swiper>
+                </view>
+            </view>
+        </view>
+    </view>
 </view>
-  
-  

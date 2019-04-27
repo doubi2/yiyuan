@@ -11,7 +11,7 @@ Component({
      * 组件的初始数据
      */
     data: {
-        value:''
+        search:"疾病、医生+科室、医院等"
     },
 
     /**

@@ -1,4 +1,6 @@
 {
-  "usingComponents": {}
-  
+    "navigationBarTitleText": "好医愿",
+    "usingComponents": {
+        "MyTitle": "../../components/MyTitle/MyTitle"
+    }
 }

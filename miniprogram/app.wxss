@@ -1,9 +1,11 @@
 /**app.wxss**/
+page,view,image,swiper,swiper-item,navigator{
+  box-sizing: border-box;
+}
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
 } 
 
 button {
@@ -13,12 +15,22 @@ button {
 button:focus{
   outline: 0;
 }
-
+.setcenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 button::after{
   border: none;
 }
 .bc_gray{
   background-color: #F8F8F8;
+}
+.bc_white{
+  background-color: #fff;
+}
+.bc_gray1{
+    background-color: #E7EAEF;
 }
 .font_gray1{
   color: #8B8F98;

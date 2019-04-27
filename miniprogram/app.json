@@ -2,13 +2,15 @@
     "pages": [
         "pages/index/index",
         "pages/doctor/doctor",
-        "pages/myinfo/myinfo"
+        "pages/myinfo/myinfo",
+        "pages/search/search",
+        "pages/fonddoctor/fonddoctor"
     ],
     "window": {
         "backgroundColor": "#ffffff",
         "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#ffffff",
-        "navigationBarTitleText": "好医疗",
+        "navigationBarBackgroundColor": "#45A0EF",
+        "navigationBarTitleText": "e医疗",
         "navigationBarTextStyle": "black"
     },
     "tabBar": {
