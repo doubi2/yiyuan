@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "好医愿",
+    "navigationBarTitleText": "e医疗",
     "usingComponents": {
         "MyTitle": "../../components/MyTitle/MyTitle"
     }

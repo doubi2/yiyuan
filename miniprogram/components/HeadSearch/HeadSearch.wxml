@@ -1,0 +1,8 @@
+<view class="headsearch">
+    <view class="searchframe">
+        <navigator class='search setcenter' url="../../pages/search/search" open-type="navigate" hover-class="none">
+          <image src="../../icons/search.png" />
+          <view>{{search}}</view>
+        </navigator>
+    </view>
+</view>

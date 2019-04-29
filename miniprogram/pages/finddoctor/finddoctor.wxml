@@ -1,0 +1,50 @@
+<!--头部搜索框-->
+<HeadSearch></HeadSearch>
+<!--按疾病找，按医院找分类-->
+<view class="findclassify" hover-class="none" hover-stop-propagation="false">
+    <view class="findclassify_main">
+        <view class="setcenter bydisease">
+            <image src="../../icons/disease.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+            <view>按疾病找</view>
+            <view>1890中疾病</view>
+        </view>
+        <view class="setcenter bydisease byhospital">
+            <image src="../../icons/hospital.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+            <view>按医院找</view>
+            <view>5445家医院</view>
+        </view>
+    </view>
+    <view class="bc_gray find_span"></view>
+    <view class="findbydisease">
+        <view class="find_common">
+            <view class="find_common_main">
+                <view class="common_title font_gray1">常见科室</view>
+                <view class="common_disease">
+                    <block wx:for="{{commondisease}}" wx:key="{{index}}">
+                        <view class="disease_block {{(index%3==1) ? 'mid_block' : ''}}">
+                            <image class="" src="{{item.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                            <view>{{item.title}}</view>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+        <view class="find_all">
+            <block wx:for="{{alldisease}}" wx:key="{{index}}">
+                <view class="disease">
+                    <view class="common_title font_gray1">{{item.title}}</view>
+                    <view class="common_disease">
+                        <block wx:for="{{item.classify}}" wx:key="{{index}}">
+                            <view class="disease_block {{(index%3==1) ? 'mid_block' : ''}}">
+                                <view>{{item.title}}</view>
+                            </view>
+                        </block>
+                    </view>
+                </view>
+            </block>
+              
+        </view>
+    </view>
+    
+</view>
+  

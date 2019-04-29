@@ -1,6 +1,7 @@
 {
     "pages": [
         "pages/index/index",
+        "pages/finddoctor/finddoctor",
         "pages/doctor/doctor",
         "pages/myinfo/myinfo",
         "pages/search/search",

@@ -1,0 +1,84 @@
+.findclassify{
+    width: 100%;
+    height: 250rpx;
+}
+.findclassify_main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.bydisease{
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    border:solid #F0F0F0 1rpx;
+}
+.bydisease image{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+    background-color: #FF9C59;
+}
+.bydisease view:first-of-type{
+    font-size: 35rpx;
+    padding: 12rpx 0;
+}
+.bydisease view:nth-of-type(2){
+    font-size: 27rpx;
+    margin-bottom: 10rpx;
+    color: #8E8E8E;
+}
+.byhospital image{
+    background-color: #FE8282;
+}
+.find_span{
+    width: 100%;
+    height: 15rpx;
+}
+.findbydisease{
+    width: 100%;
+    height: 2000rpx;
+    background-color: #FE8282;
+}
+.find_common{
+    width: 94%;
+    margin:0 3%;
+}
+.find_common_main{
+    width: 100%;
+    height: 450rpx;
+    margin: 30rpx 0;
+}
+.common_title{
+    font-size: 33rpx;
+    margin: 20rpx 0;
+}
+.common_disease{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.disease_block{
+    width: 33.33333%;
+    height: 180rpx;
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom:solid #ffffff 15rpx;
+    font-size: 27rpx;
+    font-weight: 600;
+}
+.mid_block{
+    border-bottom:solid #ffffff 15rpx;
+    border-left:solid #ffffff 15rpx;
+    border-right:solid #ffffff 15rpx;
+
+}
+.common_disease image{
+    width: 80rpx;
+    height: 80rpx;
+}
