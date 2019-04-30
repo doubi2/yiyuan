@@ -1,0 +1,19 @@
+<view class="">
+    <view class="">
+        <view class="">
+            <image class="" src="{{inquirydoctor.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+            <view class="">
+                <view>
+                    <view>{{inquirydoctor.doctorname}}</view>
+                    <view>{{inquirydoctor.position}}</view>
+                </view>
+                <view>
+                    请描述你的性别年龄、症状、就诊经历、我将竭诚为你治疗、并保证你的隐私安全
+                </view>
+            </view>
+        </view>
+        <view class="section">
+            <textarea focus="true" style="height: 5em" placeholder="输入信息"/>
+        </view>
+    </view>
+</view>

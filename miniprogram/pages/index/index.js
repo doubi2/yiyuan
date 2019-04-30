@@ -163,7 +163,7 @@ Page({
         console.log(Naviid);
         var toURL;
         if (Naviid == 0) { 
-            toURL = "../fonddoctor/fonddoctor";
+            toURL = "../finddoctor/finddoctor";
             wx.navigateTo({
                 url: toURL
             })

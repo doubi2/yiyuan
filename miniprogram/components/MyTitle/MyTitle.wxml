@@ -2,7 +2,7 @@
     <view class="myTitle">
         <!-- logo区 -->
         <view class="logo">
-            e医疗在线
+            智慧医疗
         </view>
         <!-- 导航 -->
         <view class="navi">

@@ -38,6 +38,9 @@ button::after{
 .font_gray2{
   color: #9C9C9C;
 }
+.font_black{
+  color: #333333;
+}
 .bc_green{
   background-color: #77C82B;
 }

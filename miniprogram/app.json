@@ -1,6 +1,8 @@
 {
     "pages": [
         "pages/index/index",
+        "pages/inquiry/inquiry",
+        "pages/doctorinfo/doctorinfo",
         "pages/finddoctor/finddoctor",
         "pages/doctor/doctor",
         "pages/myinfo/myinfo",
@@ -11,7 +13,7 @@
         "backgroundColor": "#ffffff",
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#45A0EF",
-        "navigationBarTitleText": "e医疗",
+        "navigationBarTitleText": "智慧医疗",
         "navigationBarTextStyle": "black"
     },
     "tabBar": {

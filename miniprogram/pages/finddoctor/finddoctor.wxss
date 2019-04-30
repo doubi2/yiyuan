@@ -39,7 +39,6 @@
 .findbydisease{
     width: 100%;
     height: 2000rpx;
-    background-color: #FE8282;
 }
 .find_common{
     width: 94%;
@@ -81,4 +80,8 @@
 .common_disease image{
     width: 80rpx;
     height: 80rpx;
+}
+.alldisease_block{
+    height: 120rpx;
+    font-weight: 400;
 }

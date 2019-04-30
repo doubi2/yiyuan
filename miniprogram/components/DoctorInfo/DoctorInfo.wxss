@@ -1,0 +1,150 @@
+.doctorinfo{
+
+}
+.doctorinfo_main{
+
+}
+.doctorinfo_sort{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100rpx;
+    border-bottom: solid #E7EAEF 1px;
+    padding: 0 20rpx;
+}
+.sort_block{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+}
+.sort_block image{
+    width: 28rpx;
+    height: 28rpx;
+}
+.doctorinfo_content{
+    width:100%;
+}
+.doctorinfo_nav{
+    width: 96%;
+    height: 360rpx;
+    margin-left: 4%;
+    margin-top: 10rpx;
+    border-bottom: solid #E7EAEF 1px;
+    font-size: 25rpx;
+    display: flex;
+    flex-direction: row;
+}
+.doctor_image{
+    margin-top: 20rpx;
+}
+.doctor_image image{
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 45rpx;
+}
+.doctor_info{
+    padding-left: 20rpx;
+}
+.doctor_info_main>view{
+    margin: 15rpx 0;
+}
+
+.doctor_name{
+    height: 25px;
+}
+.doctorname{
+    font-size: 30rpx;
+    font-weight: 500;
+}
+.position{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20rpx;
+}
+.doctor_hospital{
+
+}
+.doctor_skilled{
+    width:100%;
+}
+.doctor_response{
+
+}
+.doctor_reputation{
+    display: flex;
+}
+.reputation{
+    display: flex;
+    align-items: center;
+    padding: 0 13rpx;
+    width: auto;
+    height: 40rpx;
+    border-radius: 20rpx;
+    border: solid #389487 1px;
+}
+.department{
+    margin-right: 20rpx;
+}
+.hospital{
+
+}
+.response{
+    margin-left: 20rpx;
+}
+.doctor_star{
+    width: 22rpx;
+    height:22rpx;
+}
+.onrow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.font_gray3{
+    color: #8C8C8C;
+}
+.font_gray4{
+    color: #A5A5A5;
+}
+.font_gray5{
+    color: #666666;
+}
+.font_green{
+    color:#389487;
+}
+.skill_text{
+    display: block;
+    width: 99.99%;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space:nowrap; 
+}
+.ask{
+    width:100%; 
+    margin-top: 20rpx;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ask_doctor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx;
+    width: 120rpx;
+    height: 50rpx;
+    border: solid #389487 1px;
+    border-radius: 5rpx;
+    font-weight: 600; 
+}
+.askway{
+    font-size: 31rpx;
+    color: #6F7581;
+}

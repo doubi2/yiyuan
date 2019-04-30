@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "HeadSearch": "../../components/HeadSearch/HeadSearch",
+    "DoctorInfo": "../../components/DoctorInfo/DoctorInfo"
+  }
+}
