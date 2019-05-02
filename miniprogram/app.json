@@ -1,11 +1,15 @@
 {
     "pages": [
+        "pages/orthopedics/ orthopedics",
+        "pages/department/department",
         "pages/index/index",
+        "pages/myinfo/myinfo",
+        "pages/volunteer/volunteer",
+        "pages/hospital/hospital",
         "pages/inquiry/inquiry",
         "pages/doctorinfo/doctorinfo",
         "pages/finddoctor/finddoctor",
         "pages/doctor/doctor",
-        "pages/myinfo/myinfo",
         "pages/search/search",
         "pages/fonddoctor/fonddoctor"
     ],

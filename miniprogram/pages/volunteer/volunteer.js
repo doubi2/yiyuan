@@ -1,32 +1,19 @@
-// pages/index/index.js
+// pages/volunteer/volunteer.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        options:[
+        sex: [
             {
-                id: 0,
-                title: "图文问诊",
-                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/image_text.png",
-                introduce: "根据您的需求，便捷问诊。",
-                className: "option_greenblue"
+                name: "m",
+                value:"男",
             },
             {
-                id: 2,
-                title: "语音急诊",
-                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/voice.png",
-                introduce: "为您定制化服务",
-                className: "option_green"
-            },
-            {
-                id: 3,
-                title: "用药咨询",
-                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/drug.png",
-                introduce: "您的症状，决定您的用药。",
-                className: "option_pink"
-            },
+                name: "w",
+                value:"女",
+            }
         ]
     },
 

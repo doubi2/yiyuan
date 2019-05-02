@@ -1,7 +1,7 @@
 <view class=".container" hover-class="none" hover-stop-propagation="false">
     <view class="content" hover-class="none" hover-stop-propagation="false">
         <view class="headtitle">
-            咨询医生
+            极速问诊
         </view>
         <view class="quality bc_gray" hover-class="none" hover-stop-propagation="false">
             <view class="quality_center">

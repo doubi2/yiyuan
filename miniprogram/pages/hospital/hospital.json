@@ -1,0 +1,7 @@
+{
+"navigationBarTitleText": "选择挂号医院",
+  "usingComponents": {
+    "HeadSearch": "../../components/HeadSearch/HeadSearch",
+    "Sort": "../../components/Sort/Sort"
+  }
+}

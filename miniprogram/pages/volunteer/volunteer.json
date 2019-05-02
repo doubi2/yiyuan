@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "智慧医疗--咨询",
+  "usingComponents": {
+    "TextImport": "../../components/TextImport/TextImport"
+  }
+}

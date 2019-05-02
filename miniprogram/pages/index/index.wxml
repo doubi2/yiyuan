@@ -27,7 +27,7 @@
     </view>
     <!-- 功能区块 -->
     <view class="functions" hover-class="none" hover-stop-propagation="false">
-        <navigator class="functions_wrap" wx:for="{{functions}}" wx:key="{{index}}"  target="" url="" hover-class="none" open-type="navigate">
+        <navigator class="functions_wrap" wx:for="{{functions}}" wx:key="{{index}}" data-id="{{item.id}}" id="{{item.id}}" bindtap="functionsbind" target="" url="" hover-class="none" open-type="navigate">
             <view class="functins_item">
                 <view class='font functins_item_title'>{{item.title}}</view>
                 <view class='font functins_item_context'>{{item.context}}</view>
@@ -52,7 +52,7 @@
                 </view>
             </view>
             <view class="setcenter apply">
-                <navigator class="setcenter apply_botton" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                <navigator class="setcenter apply_botton" target="" url="../fonddoctor/fonddoctor" hover-class="navigator-hover" open-type="navigate">
                     立即申请
                 </navigator>
             </view>

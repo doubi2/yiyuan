@@ -1,15 +1,13 @@
-// pages/doctorinfo/doctorinfo.js
-
-
+// pages/department/department.js
 Page({
-    
+
     /**
      * 页面的初始数据
      */
     data: {
         scrollTop: null,
-        title:"皮肤科",
-        checked:false,
+        title: "皮肤科",
+        checked: false,
         doctorinfosort: [
             {
                 id: 0,
@@ -30,68 +28,61 @@ Page({
                 doctorname: "曾梅华",
                 imagePath: "../../images/doctor_1.png",
                 position: "主治医生",
-                department:"皮肤性病科",
+                department: "皮肤性病科",
                 hospital: " 南华大学附属第二医院",
                 skilled: "荨麻疹、湿疹、尖锐湿疣、寻常疣、传染性软疣",
                 star: "5.0",
                 response: "71155个回答 1011个处方 10分钟响应",
                 reputation: "荨麻疹类",
-                askway:"图文  |  电话"
+                number: "已挂号人数553"
             },
             {
                 id: 2,
                 doctorname: "曾梅华",
                 imagePath: "../../images/doctor_1.png",
                 position: "主治医生",
-                department:"皮肤性病科",
+                department: "皮肤性病科",
                 hospital: " 南华大学附属第二医院",
                 skilled: "荨麻疹、湿疹、尖锐湿疣、寻常疣、传染性软疣",
                 star: "5.0",
                 response: "71155个回答 1011个处方 10分钟响应",
                 reputation: "荨麻疹类",
-                askway:"图文  |  电话"
+                number: "已挂号人数53"
             },
             {
                 id: 3,
                 doctorname: "曾梅华",
                 imagePath: "../../images/doctor_1.png",
                 position: "主治医生",
-                department:"皮肤性病科",
+                department: "皮肤性病科",
                 hospital: " 南华大学附属第二医院",
                 skilled: "荨麻疹、湿疹、尖锐湿疣、寻常疣、传染性软疣",
                 star: "5.0",
                 response: "71155个回答 1011个处方 10分钟响应",
                 reputation: "荨麻疹类",
-                askway:"图文  |  电话"
+                number: "已挂号人数103"
             },
             {
                 id: 4,
                 doctorname: "曾梅华",
                 imagePath: "../../images/doctor_1.png",
                 position: "主治医生",
-                department:"皮肤性病科",
+                department: "皮肤性病科",
                 hospital: " 南华大学附属第二医院",
                 skilled: "荨麻疹、湿疹、尖锐湿疣、寻常疣、传染性软疣",
                 star: "5.0",
                 response: "71155个回答 1011个处方 10分钟响应",
                 reputation: "荨麻疹类",
-                askway:"图文  |  电话"
+                number: "已挂号人数563"
             },
         ]
     },
 
-    //滚动条监听
-    scroll: function (e) {
-        console.log(e.detail.scrollTop);
-        this.setData({ scrollTop: e.detail.scrollTop })
-    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        wx.setNavigationBarTitle({
-            title: this.data.title
-          })
+
     },
 
     /**

@@ -1,0 +1,4 @@
+<view class="textimport">
+    <view class="textimport_title">{{title}}</view>
+    <input class="textimport_place" placeholder="{{placeholder}}" type="{{type}}" placeholder-class="text_place_class"/>
+</view>

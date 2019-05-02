@@ -17,26 +17,26 @@ Page({
                 id: 0,
                 title:"门诊医生",
                 imagePath:"../../icons/doctor.png",
-                introduce:"20万+医生"
+                introduce:"300家名医"
             },
             {
                 id: 1,
                 title:"医院挂号",
                 imagePath:"../../icons/registration.png",
-                introduce:"全国1209家医院"
+                introduce:"无需排队"
             },
             {
                 id: 2,
                 title:"健康管理",
                 imagePath:"../../icons/doctor.png",
-                introduce:"健康管理"
+                introduce:"你的智能管家"
             },
         ],
         functions: [        //功能区介绍
             {   
                 id: 0,
                 title: "义诊",
-                context: "图文电话"
+                context: "免费诊疗"
             },
             {
                 id: 1,
@@ -46,22 +46,22 @@ Page({
             {
                 id: 2,
                 title: "众筹互助",
-                context: "专家接诊"
+                context: "积少成多"
             },
             {
                 id: 3,
                 title: "用药指南",
-                context: "专家接诊"
+                context: "计划用药，健康提醒"
             },
             {
                 id: 4,
                 title: "健康交流",
-                context: "专家接诊"
+                context: "实时讨论"
             },
             {
                 id: 5,
                 title: "体检解读",
-                context: "专家接诊"
+                context: "信息解读，及时反馈"
             }
         ],
         forms: [           //每日表单区
@@ -164,10 +164,29 @@ Page({
         var toURL;
         if (Naviid == 0) { 
             toURL = "../finddoctor/finddoctor";
-            wx.navigateTo({
-                url: toURL
-            })
+        }else if (Naviid == 1) {
+            toURL = "../hospital/hospital";
+        } else { 
+            toURL = "../hospital/hospital";
         }
+        wx.navigateTo({
+            url: toURL
+        })
+    },
+    functionsbind: function (e) {
+        var Naviid = e.currentTarget.dataset.id;
+        console.log(Naviid);
+        var toURL;
+        if (Naviid == 0) { 
+            toURL = "../volunteer/volunteer";
+        }else if (Naviid == 5) {
+            toURL = "../volunteer/volunteer";
+        } else { 
+            toURL = "../hospital/hospital";
+        }
+        wx.navigateTo({
+            url: toURL
+        })
     },
     /**
      * 生命周期函数--监听页面加载

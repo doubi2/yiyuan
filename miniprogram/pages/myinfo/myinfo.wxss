@@ -1,13 +1,102 @@
+page{
+    background-color: #F1F2F6;
+}
+.user{
+    background-color: #1769CC;
+    width: 100%;
+    height:180rpx;
+}
 .userAvatar{
     width: 100%;
-    height: 100rpx;
+    height: 180rpx;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 50rpx;
 }
 .userAvatar image{
-    width:160rpx;
-    height:160rpx;
-    border-radius: 80rpx;
+    width:150rpx;
+    height:150rpx;
+    border-radius:75rpx;    
+}
+.userAvatar button{
+    width: 200rpx;
+    height: 50rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30rpx;
+}
+.userAvatar view{
+    width: 200rpx;
+    height: 50rpx;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 30rpx;
+    padding-left:14px;
+}
+.myinfo_order{
+    width: 100%;
+}
+.all_order{
+    width: 100%;
+    height: 80rpx;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #DCDCDD 1px;
+    border-top: solid #DCDCDD 1px;
+    font-size: 28rpx;
+    padding-left: 50rpx;
+    padding-right: 50rpx;
+}
+.all_order image{
+    width: 30rpx;
+    height: 30rpx;
+}
+.myinfo_functions{
+    width: 100%;
+    margin-top: 20rpx;
+}
+.functions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.function_item{
+    width: 24.9%;
+    height: 180rpx;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25rpx;
+    font-weight: 400;
+    border: solid #DCDCDD 1px;
+}
+.function image{
+    width: 90rpx;
+    height: 90rpx;
+    margin-bottom: 10rpx;
+}
+.function{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.private_doctor{
+    margin-top: 20rpx;
+}
+.vip_doctor{
+    margin-bottom: 20rpx;
+}
+.install{
+    margin-top: 20rpx;
 }

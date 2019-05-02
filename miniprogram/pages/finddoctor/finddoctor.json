@@ -1,4 +1,5 @@
 {
+"navigationBarTitleText": "找医生",
   "usingComponents": {
     "HeadSearch": "../../components/HeadSearch/HeadSearch"
   }

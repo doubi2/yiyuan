@@ -1,0 +1,24 @@
+.hospital{
+
+}
+.hospitals_block{
+    width: 100%;
+    height: 150rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: solid #E7EAEF 1px;
+}
+.hospitals_block image{
+    width: 80rpx;
+    height: 80rpx;
+    margin: 0 30rpx;
+}
+.hospitalinfo :first-of-type{
+    font-size: 35rpx;
+    font-weight: 600;
+}
+.hospitalinfo :nth-of-type(2){
+    font-size: 30rpx;
+}

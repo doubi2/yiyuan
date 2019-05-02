@@ -1,16 +1,10 @@
+
 <!--头部搜索框-->
-<HeadSearch></HeadSearch>
+<HeadSearch search="输入疾病等，搜索其他医生"></HeadSearch>
 <!--根据医生详情排序-->
 <view class="doctorinfo">
     <view class="doctorinfo_main">
-        <view class="doctorinfo_sort " hover-class="none" hover-stop-propagation="false">
-            <block wx:for="{{doctorinfosort}}" wx:key="{{index}}">
-                <view class="sort_block {{checked?'font_black':'font_gray4'}}" hover-class="none" hover-stop-propagation="false">
-                    <view>{{item.title}}</view>
-                    <image class="" src="{{checked?'../../icons/up_over.png':'../../icons/down.png'}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-                </view>
-            </block>
-        </view>
+
         <view class="doctorinfo_content" hover-class="none" hover-stop-propagation="false">
             <block wx:for="{{doctorinfo}}" wx:key="{{key}}">
                 <navigator class="doctorinfo_nav" target="" url="../inquiry/inquiry" hover-class="navigator-hover" open-type="navigate">
@@ -45,18 +39,15 @@
                                 <view style="color:#FFB200">
                                 {{item.star}}
                                 </view>
-                                <view decode="{{true}}" class="response font_gray5">
-                                {{item.response}}
-                                </view>
                             </view>
                             <view class="doctor_reputation font_green">
                                 <view class="reputation">「{{item.reputation}}」优秀医生</view>
                             </view>
                         </view>
                         <view class="ask">
-                            <view class="askway">{{item.askway}}</view>
+                            <view class="askway">{{item.number}}</view>
                             <view class="ask_doctor font_green">
-                                问医生
+                                去挂号
                             </view>
                         </view>
                     </view>

@@ -1,0 +1,17 @@
+<!--头部搜索框-->
+<HeadSearch search="搜索医院"></HeadSearch>
+<!--筛选-->
+<Sort></Sort>
+<view class='hospital'>
+    <view class="hospital_main">
+        <block wx:for="{{hospitals}}" wx:key="{{index}}">
+            <navigator class="hospitals_block" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                <image class="" src="../../icons/hospitals.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                <view class="hospitalinfo">
+                    <view>{{item.hospitalname}}</view>
+                    <view>{{item.place}}</view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+</view>

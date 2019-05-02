@@ -1,0 +1,16 @@
+<view class="orthopedics">
+    <view>
+        <view>
+            <image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+            <view class="">
+                <view>
+                    <view>曾梅华</view>
+                    <view>主治医生</view>
+                </view>
+                <view>
+                    <view>已挂号</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

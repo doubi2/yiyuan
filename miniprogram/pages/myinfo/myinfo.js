@@ -8,7 +8,71 @@ Page({
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
         defaultPortrait: "../../icons/login.png",
         state:false,
-        userinfo:{}
+        userinfo: {},
+        myinfo_functions: [
+            {
+                id: 0,
+                imagePath: "../../icons/recovery.png",
+                title:"康复任务"
+            },
+            {
+                id: 1,
+                imagePath: "../../icons/prescription.png",
+                title:"我的处方"
+            },
+            {
+                id: 2,
+                imagePath: "../../icons/bill.png",
+                title:"预约会诊单"
+            },
+            {
+                id: 3,
+                imagePath: "../../icons/report.png",
+                title:"诊后报到"
+            },
+            {
+                id: 4,
+                imagePath: "../../icons/medicine1.png",
+                title:"用药日记"
+            },
+            {
+                id: 5,
+                imagePath: "../../icons/disease1.png",
+                title:"疾病日记"
+            },
+            {
+                id: 6,
+                imagePath: "../../icons/volunteerbasis.png",
+                title:"免费义诊"
+            },
+            {
+                id: 7,
+                imagePath: "../../icons/register.png",
+                title:"预约挂号"
+            },
+        ],
+        myfunctions: [
+            {
+                id: 0,
+                title:"患者管理",
+            },
+            {
+                id: 1,
+                title:"我的诊后评价",
+            },
+            {
+                id: 2,
+                title:"我的暖心",
+            },
+            {
+                id: 3,
+                title:"我的收藏",
+            },
+            {
+                id: 4,
+                title:"我关注的医生",
+            },
+        ]
     },
 
     /**

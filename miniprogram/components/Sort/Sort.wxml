@@ -1,0 +1,8 @@
+<view class="doctorinfo_sort " hover-class="none" hover-stop-propagation="false">
+    <block wx:for="{{doctorinfosort}}" wx:key="{{index}}">
+        <view class="sort_block {{checked?'font_black':'font_gray4'}}" hover-class="none" hover-stop-propagation="false">
+            <view>{{item.title}}</view>
+            <image class="" src="{{checked?'../../icons/up_over.png':'../../icons/down.png'}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+    </block>
+</view>

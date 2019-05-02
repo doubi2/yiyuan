@@ -1,0 +1,22 @@
+.textimport{
+    width: 100%;
+    height: 80rpx;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: solid #DCDCDD 1px;
+    border-top: solid #DCDCDD 1px;
+    font-size: 28rpx;
+    margin: 20rpx 0;
+}
+.textimport_title{
+    margin-left:30rpx;
+    color: #646464;
+}
+.textimport_place{
+    margin-left: 6rpx;
+}
+.text_place_class{
+    font-size: 28rpx;
+}

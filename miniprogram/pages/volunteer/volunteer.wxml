@@ -1,0 +1,35 @@
+<view class="volunteer">
+    <view class="volunteer_warn">
+        <image class="" src="../../icons/warn.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        <view>请补充患者信息，完成咨询提交</view>
+    </view>
+    <view class="volunteer_main">
+        <TextImport title="患者姓名："></TextImport>
+        <view class="textimport">
+            <view class="textimport_title">患者性别:</view>
+            <radio-group class="radio-group" bindchange="radioChange">
+                <label class="radio" wx:for="{{sex}}" wx:key="index">
+                    <radio  color="#45A0EF" value="{{item.name}}" checked="{{item.checked}}" />
+                    {{item.value}}
+                </label>
+            </radio-group>
+        </view>
+        <TextImport title="出生日期：" placeholder="请选择出生日期"></TextImport>
+        <TextImport title="所在地区：" placeholder="" ></TextImport>
+        <view class="textimport relation">
+            <view class="textimport_title">所在地区：</view>
+            <view class="reminder">请选择地区</view>
+            <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+        <view class="textimport relation">
+            <view class="textimport_title">与患者关系: </view>
+            <view class="reminder">请选择与患者关系</view>
+            <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+        <TextImport title="联系方式：" type="number" placeholder="医生回复时接收短信提醒" ></TextImport>
+    </view>
+    <view class="save_button">
+        <button> 保存 </button>
+    </view>
+</view>
+  

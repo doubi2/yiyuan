@@ -1,11 +1,54 @@
-<view class="user flex-wrp">
-   
-    <!-- 需要使用 button 来授权登录 -->
-    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
-    <view wx:else>请升级微信版本</view>
-   <view class="userAvatar">
-        <image src="{{state ? userinfo.avatarUrl : defaultPortrait}}"></image>
-        <view>{{userinfo.nickName}}</view>
-   </view>
-    
-  </view>
+<view class="myinfo">
+     <view class="user">
+          <!-- 需要使用 button 来授权登录 -->
+          <view class="userAvatar">
+               <image src="{{state ? userinfo.avatarUrl : defaultPortrait}}"></image>
+               <button wx:if="{{false}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" hover-class="none">微信登录</button>
+               <view wx:else>{{userinfo.nickName}}</view>
+          </view>
+     </view>
+     <view class="myinfo_order">
+          <view class="all_order">
+               <view>全部订单</view>
+               <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+          </view>
+     </view>
+     <view class="myinfo_functions">
+          <view class="functions">
+               <block wx:for="{{myinfo_functions}}" wx:key="{{index}}">
+                    <navigator class="function_item" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                         <view class="function">
+                              <image class="" src="{{item.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                              <view>{{item.title}}</view>
+                         </view>
+                    </navigator>
+               </block>
+          </view>
+     </view>
+     <view class="private_doctor">
+          <view class="all_order">
+               <view>私人医生专区</view>
+               <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+          </view>
+     </view>
+     <view class="vip_doctor">
+          <view class="all_order">
+               <view>VIP会员专区</view>
+               <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+          </view>
+     </view>
+     <view class="myfunctions">
+          <block wx:for="{{myfunctions}}" wx:key="{{index}}">
+               <view class="all_order">
+                    <view>{{item.title}}</view>
+                    <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+               </view>
+          </block>
+     </view>
+     <view class="install">
+          <view class="all_order">
+               <view>设置</view>
+               <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+          </view>
+     </view>
+</view>

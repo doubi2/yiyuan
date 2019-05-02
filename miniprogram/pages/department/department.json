@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "挂号医生列表",
+  "usingComponents": {
+      "HeadSearch": "../../components/HeadSearch/HeadSearch"
+  }
+}
