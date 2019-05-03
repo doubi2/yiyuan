@@ -1,15 +1,42 @@
 <view class="orthopedics">
-    <view>
-        <view>
-            <image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-            <view class="">
-                <view>
-                    <view>曾梅华</view>
-                    <view>主治医生</view>
+    <view class="main">
+        <view class="head">
+            <image class="" src="{{doctorinfo.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+            <view class="doctorinfo">
+                <view class="doctorname">
+                    <view>{{doctorinfo.doctorname}}</view>
+                    <view>{{doctorinfo.position}}</view>
                 </view>
-                <view>
-                    <view>已挂号</view>
+                <view class="orthopedic">
+                    <view>已挂号 {{doctorinfo.orthopedics}}</view>
                 </view>
+            </view>
+        </view>
+        <view class="where">
+            <view class="place">
+                <view class="outplace">出诊地</view>
+                <view class="hospital">
+                    <view>{{doctorinfo.hospital}}</view>
+                    <view>{{doctorinfo.department}}</view>
+                </view>
+            </view>
+            <view class="times">
+                <block wx:for="{{datainfo}}" wx:key="{{index}}">
+                    <navigator class="ordertime" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                        <view class="timeinfo">
+                            <view class="time">
+                                <view>{{item.year}}-{{item.month}}-{{item.day}} {{item.week}} 上午</view>
+                                <view>{{item.afterday}}</view>
+                            </view>
+                            <view class="orederprice">
+                                {{price[index]}}
+                            </view>
+                        </view>
+                        <view class="right-icons">
+                            <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                        </view>
+                    </navigator>
+                </block>
             </view>
         </view>
     </view>

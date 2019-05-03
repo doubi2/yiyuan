@@ -1,9 +1,12 @@
 {
     "pages": [
-        "pages/orthopedics/ orthopedics",
-        "pages/department/department",
         "pages/index/index",
         "pages/myinfo/myinfo",
+        "pages/record/record",
+        "pages/abouthealth/abouthealth",
+        "pages/examination/examination",
+        "pages/orthopedics/ orthopedics",
+        "pages/department/department",
         "pages/volunteer/volunteer",
         "pages/hospital/hospital",
         "pages/inquiry/inquiry",
@@ -33,8 +36,8 @@
                 "selectedIconPath": "icons/index_active.png"
             },
             {
-                "pagePath": "pages/doctor/doctor",
-                "text": "社区医生",
+                "pagePath": "pages/abouthealth/abouthealth",
+                "text": "健康头条",
                 "iconPath": "icons/my_doctor.png",
                 "selectedIconPath": "icons/my_doctor_active.png"
             },

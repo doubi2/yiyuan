@@ -1,12 +1,19 @@
-// pages/rthopedics/ Orthopedics.js
+// pages/inquiry/inquiry.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
+        inquirydoctor:  {
+                id: 0,
+                doctorname:"曾梅华",
+                imagePath: "../../images/doctor_1.png",
+                position: "主治医生",
+        }
 
     },
+    
 
     /**
      * 生命周期函数--监听页面加载
@@ -20,7 +27,7 @@ Page({
      */
     onReady: function () {
 
-    },
+    }, 
 
     /**
      * 生命周期函数--监听页面显示

@@ -1,0 +1,122 @@
+.orthopedics{
+    width: 100%;
+}
+.main{
+    width: 100%;
+    height: 150rpx;
+}
+.head{
+    width: 100%;
+    height: 150rpx;
+    background-color: #45A0EF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40rpx;
+    color: #ffffff;
+}
+.head image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 10rpx;
+}
+.doctorinfo{
+    margin-left: 30rpx;
+}
+.doctorname{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.doctorname :first-of-type{
+    font-weight: 600;
+    font-size: 32rpx;
+}
+.doctorname :nth-of-type(2){
+    font-size: 28rpx;
+    margin-left: 20rpx;
+}
+.orthopedic{
+    font-size: 28rpx;
+    margin-top: 10rpx;
+}
+.where{
+    width: 100%;
+}
+.place{
+    width: 100%;
+    height: 190rpx;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: solid #E8E8E8 1rpx;
+}
+.outplace{
+    width:50rpx;
+    height:140rpx;
+    background-color: #45A0EF;
+    color: #ffffff;
+    border-bottom-right-radius: 20rpx;
+    border-top-right-radius: 20rpx;
+    font-size: 31rpx;
+    display: flex;
+    align-items: center;
+    padding-left: 9rpx;
+}
+.hospital{
+    margin-left: 30rpx;
+}
+.hospital :first-of-type{
+    font-size: 34rpx;
+    font-weight: 600;
+    padding-bottom: 10rpx;
+}
+.hospital :nth-of-type(2){
+    font-size: 30rpx;
+}
+.ordertime{
+    width: 100%;
+    height: 140rpx;
+    border-bottom: solid #E8E8E8 1rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.timeinfo{
+    margin-left: 30rpx;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.time :first-of-type{
+    font-size: 33rpx;
+    margin-right: 10rpx;
+}
+.time :nth-of-type(2){
+    font-size:25rpx;
+    width:auto;
+    height:35rpx;
+    color:#979797;
+    border:solid #979797 1px;
+    border-radius:15rpx;
+    padding: 0 10rpx;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.right-icons image{
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 30rpx;
+}
+.orederprice{
+    font-size: 30rpx;
+    color: #6A6A6A;
+    margin-top: 10rpx;
+}

@@ -1,0 +1,20 @@
+<view class="abouthealth" >
+    <view class="healthmain">
+        <block wx:for="{{healthinfo}}" wx:key="{{index}}">
+            <navigator class="healthinfo_nav" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                <view class="nav_content" hover-class="none" hover-stop-propagation="false">
+                    <view class="title">{{item.title}}</view>
+                    <view class="images">
+                        <image class="" src="{{item.imagePath1}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                        <image class="imagecenter" src="{{item.imagePath2}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                        <image class="" src="{{item.imagePath3}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                    </view>
+                    <view class="author">
+                        <view>{{item.author}} {{item.commentnum}}评论</view>
+                    </view>
+                </view> 
+            </navigator>
+        </block>
+    </view>
+</view>
+  

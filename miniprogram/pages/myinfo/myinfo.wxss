@@ -16,9 +16,9 @@ page{
     padding-left: 50rpx;
 }
 .userAvatar image{
-    width:150rpx;
-    height:150rpx;
-    border-radius:75rpx;    
+    width:130rpx;
+    height:130rpx;
+    border-radius:65rpx;    
 }
 .userAvatar button{
     width: 200rpx;
@@ -39,6 +39,7 @@ page{
 }
 .myinfo_order{
     width: 100%;
+    margin-top: 20rpx;
 }
 .all_order{
     width: 100%;

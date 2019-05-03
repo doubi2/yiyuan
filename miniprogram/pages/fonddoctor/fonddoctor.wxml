@@ -17,7 +17,7 @@
             </view>
             <image class="menu_right" src="cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/right.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
         </view>
-        <navigator class="options" wx:for="{{options}}" wx:key="{{index}}" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        <navigator class="options" wx:for="{{options}}" wx:key="{{index}}" target="" url="../finddoctor/finddoctor" hover-class="navigator-hover" open-type="navigate">
             <view class="option">
                 <view class="options_image {{item.className}}"> 
                     <image src="{{item.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />

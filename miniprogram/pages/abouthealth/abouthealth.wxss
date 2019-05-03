@@ -1,0 +1,39 @@
+.abouthealth{
+    width: 100%;
+}
+.healthmain{
+    width: 96%;
+    margin-left: 4%;
+}
+.healthinfo_nav{
+    width: 100%;
+    height: auto;
+    border-bottom: solid #E8E8E8 1rpx;
+}
+.nav_content{
+    width: 96%;
+    height: auto;
+    margin-right: 4%;
+}
+.title{
+    font-size: 32rpx;
+    margin: 17rpx 0;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.images image{
+    flex: 1;
+    height: 150rpx;
+}
+.imagecenter{
+    margin: 0 10rpx;
+}
+.author{
+    font-size: 26rpx;
+    color: #9C9C9C;
+    margin: 17rpx 0;
+    padding-bottom: 5rpx;
+}

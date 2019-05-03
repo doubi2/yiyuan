@@ -1,0 +1,145 @@
+<view class="record" hover-class="none" hover-stop-propagation="false">
+    <view class="record_main">
+        <view class="remind">
+            <view class="remind_content">
+                <text class="" selectable="false" space="false" decode="false">1.健康档案数据将作为DRA智能体以及DAPP的基础数据，请务必认真填写！
+                2.这将关系到您以后在DRA分布式应用上基于时间戳的个人健康数据链。
+                3.隐私信息我们将作脱敏处理并存储于分布式应用上，通过您的数据密钥Data-Key，您掌握数据的支配权。
+                4.第一次上传健康档案可以获取奖励。
+                </text>
+            </view>
+        </view>
+        <view class="question1">
+            <view class="question_title">
+                {{question[0].title}}
+            </view>
+            <view class="question_item">
+                <view class="item1">
+                    <view>{{question[0].item1}}</view>
+                    <view>{{question[0].hint1}}</view>
+                </view>
+                <view class="item1">
+                    <view>{{question[0].item2}}</view>
+                    <input style="direction: rtl;" class="" value="" type="text"  placeholder="{{question[0].hint2}}" placeholder-style="" placeholder-class="input-placeholder"
+                         maxlength="140"  >
+                    </input>
+                </view>
+                <view class="item1">
+                    <view>{{question[0].item3}}</view>
+                    <input style="direction: rtl;" class="" value="" type="text"  placeholder="{{question[0].hint3}}" placeholder-style="" placeholder-class="input-placeholder"
+                         maxlength="140"  >
+                    </input>
+                </view>
+                <view class="item1 lastitem">
+                    <view>{{question[0].item4}}</view>
+                    <input style="direction: rtl;" class="" value="" type="text"  placeholder="{{question[0].hint4}}" placeholder-style="" placeholder-class="input-placeholder"
+                         maxlength="140"  >
+                    </input>
+                </view>
+            </view>
+        </view>
+        <view class="question1">
+            <view class="question_title">
+                {{question[1].title}}
+            </view>
+            <view class="question_item">
+                <view class="item1">
+                    <view>{{question[1].item1}}</view>
+                    <view>{{question[1].hint1}}</view>
+                </view>
+                <view class="item1 lastitem">
+                    <view>{{question[1].item2}}</view>
+                    <view>{{question[1].hint2}}</view>
+                </view>
+                
+            </view>
+        </view>
+        <view class="question1">
+            <view class="question_title quesetionselect">
+                <view>{{question[2].title}}</view>
+                <view>(可从常见标签中选择)</view>
+            </view>
+            <view class="question_item select">
+                <block wx:for="{{question[2].item}}" wx:key="{{index}}">
+                    <view class="selectitem setcenter"  bindtap="selectitem" data-id="index"> 
+                        {{item}}
+                    </view>
+                </block>
+            </view>
+            <view class="textareaplace">
+                <textarea class="" value="" placeholder="可输入补充您的{{question[2].title}}" placeholder-style="" placeholder-class="textareaholder" 
+                     maxlength="140" 
+                     bindlinechange="%{15}">
+                </textarea>
+            </view>
+        </view>
+
+        <view class="question1">
+            <view class="question_title quesetionselect">
+                <view>{{question[3].title}}</view>
+                <view>(可从常见标签中选择)</view>
+            </view>
+            <view class="question_item select">
+                <block wx:for="{{question[3].item}}" wx:key="{{index}}">
+                    <view class="selectitem setcenter"  bindtap="selectitem" data-id="index"> 
+                        {{item}}
+                    </view>
+                </block>
+            </view>
+            <view class="textareaplace">
+                <textarea class="" value="" placeholder="可输入补充您的{{question[3].title}}" placeholder-style="" placeholder-class="textareaholder" 
+                     maxlength="140" 
+                     bindlinechange="%{15}">
+                </textarea>
+            </view>
+        </view>
+
+        <view class="question1">
+            <view class="question_title quesetionselect">
+                <view>{{question[4].title}}</view>
+                <view>(可从常见标签中选择)</view>
+            </view>
+            <view class="question_item select">
+                <block wx:for="{{question[4].item}}" wx:key="{{index}}">
+                    <view class="selectitem setcenter"  bindtap="selectitem" data-id="index"> 
+                        {{item}}
+                    </view>
+                </block>
+            </view>
+            <view class="textareaplace">
+                <textarea class="" value="" placeholder="可输入补充您的{{question[4].title}}" placeholder-style="" placeholder-class="textareaholder" 
+                     maxlength="140" 
+                     bindlinechange="%{15}">
+                </textarea>
+            </view>
+        </view>
+
+        <view class="question1">
+            <view class="question_title quesetionselect">
+                <view>{{question[5].title}}</view>
+                <view>(可从常见标签中选择)</view>
+            </view>
+            <view class="question_item select">
+                <block wx:for="{{question[5].item}}" wx:key="{{index}}">
+                    <view class="selectitem setcenter"  bindtap="selectitem" data-id="index"> 
+                        {{item}}
+                    </view>
+                </block>
+            </view>
+            <view class="textareaplace">
+                <textarea class="" value="" placeholder="可输入补充您的{{question[5].title}}" placeholder-style="" placeholder-class="textareaholder" 
+                     maxlength="140" 
+                     bindlinechange="%{15}">
+                </textarea>
+            </view>
+        </view>
+    </view>
+    
+    <view class="buttons setcenter">
+        <button class="default setcenter" hover-class="button-hover" hover-stop-propagation="false" form-type="submit"  >
+            完成
+        </button>
+          
+    </view>
+</view>
+  

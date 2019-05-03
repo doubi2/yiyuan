@@ -39,7 +39,7 @@
      </view>
      <view class="myfunctions">
           <block wx:for="{{myfunctions}}" wx:key="{{index}}">
-               <view class="all_order">
+               <view class="all_order" data-id="{{item.id}}" id="{{item.id}}" bindtap="myBindNavi">
                     <view>{{item.title}}</view>
                     <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
                </view>

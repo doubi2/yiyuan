@@ -29,7 +29,7 @@
         <TextImport title="联系方式：" type="number" placeholder="医生回复时接收短信提醒" ></TextImport>
     </view>
     <view class="save_button">
-        <button> 保存 </button>
+        <button bindtap="save" > 保存 </button>
     </view>
 </view>
   

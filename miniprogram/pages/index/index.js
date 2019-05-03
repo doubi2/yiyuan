@@ -28,7 +28,7 @@ Page({
             {
                 id: 2,
                 title:"健康管理",
-                imagePath:"../../icons/doctor.png",
+                imagePath:"../../icons/manage.png",
                 introduce:"你的智能管家"
             },
         ],

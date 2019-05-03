@@ -1,0 +1,113 @@
+.record{
+    
+}
+.record_main{
+
+}
+.remind{
+    width: 100%;
+    height: auto;
+}
+.remind_content{
+    width: 94%;
+    height: auto;
+    margin: 50rpx 3%;
+    box-shadow: 1rpx 1rpx 1rpx 1rpx #C7DDF4;
+    /*for Android*/
+    -webkit-box-shadow: 1px 1px 1px 1px #C7DDF4;
+    /*for IOS*/
+    border-radius: 15rpx;
+    padding:20rpx 13rpx;
+    display: flex;
+    align-items: center;
+}
+.remind_content text{
+    font-size: 27rpx;
+    line-height: 45rpx;
+}
+.question1{
+    width: 94%;
+    height: auto;
+    margin: 50rpx 3%;
+    border: solid #C7DDF4 1px;
+    border-radius: 15rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+.question_title{
+    font-size: 30rpx;
+    font-weight: 600;
+    margin-top: 30rpx;
+    margin-bottom: 20rpx;
+}
+.question_item{
+    font-size: 27rpx;
+    padding-bottom: 10rpx;
+}
+.item1{
+    height: 70rpx;
+    border-bottom: solid #C7DDF4 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.item1 input{
+    height: 100%;
+}
+.lastitem{
+    border-bottom:0px;
+}
+.quesetionselect{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.quesetionselect :nth-of-type(2){
+    font-size: 26rpx;
+    color: #9B9EA5;
+    margin-left: 10rpx;
+}
+.select{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 60rpx;
+}
+.selectitem{
+    width: auto;
+    font-size: 25rpx;
+    height: 44rpx;
+    border-radius: 19rpx;
+    padding: 0 20rpx;
+    border: solid #C7DDF4 1px;
+    margin: 5rpx 30rpx 5rpx 0;
+}
+.textareaplace textarea{
+    width: 530rpx;
+    height: 160rpx;
+    border: solid #B5B5B5 1px;
+    border-radius: 20rpx;
+    margin-top: 10rpx;
+    margin-bottom: 30rpx;
+    padding: 20rpx;
+}
+.textareaholder{
+    font-size: 27rpx;
+}
+.buttons{
+    width: 100%;
+    height: 100rpx;
+    margin-bottom: 30rpx;
+}
+.buttons button{
+    width: 150rpx;
+    height: 70rpx;
+    border-radius: 35rpx;
+    font-size: 32rpx;
+    color: #ffffff;
+    background-color: #3A73C0;
+}

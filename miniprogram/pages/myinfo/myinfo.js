@@ -58,23 +58,43 @@ Page({
             },
             {
                 id: 1,
-                title:"我的诊后评价",
+                title:"健康档案",
             },
             {
                 id: 2,
-                title:"我的暖心",
+                title:"我的诊后评价",
             },
             {
                 id: 3,
-                title:"我的收藏",
+                title:"我的暖心",
             },
             {
                 id: 4,
+                title:"我的收藏",
+            },
+            {
+                id: 5,
                 title:"我关注的医生",
             },
         ]
     },
-
+    myBindNavi: function (e) { 
+        var Naviid = e.currentTarget.dataset.id;
+        console.log(Naviid);
+        var toURL;
+        if (Naviid == 1) { 
+            toURL = "../record/record";
+            wx.navigateTo({
+                url: toURL
+            })
+        }else { 
+            toURL = "../index/index";
+            wx.switchTab({
+                url: toURL
+            })
+        }
+        
+    },
     /**
      * 生命周期函数--监听页面加载
      */

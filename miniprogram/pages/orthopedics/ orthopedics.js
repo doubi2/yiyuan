@@ -54,14 +54,18 @@ Page({
             position: "主治医生",
             orthopedics:"552",
             hospital: " 南华大学附属第二医院",
-        }
+            department:"皮肤性病科",
+        },
+        datainfo: getDates(8),
+        price: [
+            "普通60.00元","专家","普通60.00元","专家","普通60.00元","专家","普通60.00元"
+        ]
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-        console.log(getDates(4));
     },
 
     /**

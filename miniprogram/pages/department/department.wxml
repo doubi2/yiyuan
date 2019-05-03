@@ -7,7 +7,7 @@
 
         <view class="doctorinfo_content" hover-class="none" hover-stop-propagation="false">
             <block wx:for="{{doctorinfo}}" wx:key="{{key}}">
-                <navigator class="doctorinfo_nav" target="" url="../inquiry/inquiry" hover-class="navigator-hover" open-type="navigate">
+                <navigator class="doctorinfo_nav" target="" url="../orthopedics/ orthopedics" hover-class="navigator-hover" open-type="navigate">
                     <view class="doctor_image">
                         <image src="{{item.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
                     </view>
