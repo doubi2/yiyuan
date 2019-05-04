@@ -1,0 +1,89 @@
+page{
+    background-color: #EDEDED;
+}
+.healthdata{
+    width: 100%;
+}
+.healthdata_content{
+    
+}
+.data_main{
+
+}
+.headlthitem{
+    width: 96%;
+    margin: 30rpx 2%;
+    height: auto;
+    padding: 20rpx 30rpx;
+    background-color: #ffffff;
+    border-radius: 15rpx;
+}
+.headlthitem_main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.data view{
+    margin: 0 25rpx;
+}
+.data image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.data :nth-of-type(2){
+    color: #AD9EFB;
+}
+.data_title{
+    font-size: 33rpx;
+}
+.iteminput{
+    font-size: 45rpx;
+    font-weight: 600;
+}
+.item_data{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.item_data view{
+    margin: 0;
+}
+.data_value{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.data_value :first-of-type{
+    font-size: 37rpx;
+    margin-right: 10rpx;
+}
+.data_value :nth-of-type(2){
+    font-size: 25rpx;
+    color: #9F9F9F;
+}
+.item_data :nth-of-type(2){
+    font-size: 25rpx;
+    color: #9F9F9F;
+}
+.headlth_plus{
+    width: 60rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 30rpx;
+    background: linear-gradient(#D8C6FA, #AD9EFB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38rpx;
+    font-weight: 200;
+    color: #ffffff;
+    padding-bottom: 3rpx;
+}

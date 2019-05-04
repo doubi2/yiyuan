@@ -1,0 +1,26 @@
+<view class="healthdata" hover-class="none" hover-stop-propagation="false">
+    <view class="healthdata_content">
+        <view class="data_main">
+            <block wx:for="{{headlthitem}}" wx:key="{{index}}">
+                <view class="headlthitem">
+                    <view class="headlthitem_main">
+                        <view class="data">
+                            <image class="" src="{{item.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                            <view class="data_title">{{item.title}}</view>
+                            <view class="iteminput" wx:if="{{!item.input}}">--</view>
+                                <view wx:else class="item_data">
+                                    <view class="data_value">
+                                        <view>{{item.value}}</view>
+                                        <view>{{item.unit}}</view>
+                                    </view>
+                                    <view>{{item.time}}</view>
+                                </view>
+                        </view>
+                        <view class="headlth_plus">＋</view> 
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
+  

@@ -167,7 +167,7 @@ Page({
         }else if (Naviid == 1) {
             toURL = "../hospital/hospital";
         } else { 
-            toURL = "../hospital/hospital";
+            toURL = "../OSHMS/OSHMS";
         }
         wx.navigateTo({
             url: toURL
@@ -182,7 +182,7 @@ Page({
         }else if (Naviid == 5) {
             toURL = "../volunteer/volunteer";
         } else { 
-            toURL = "../hospital/hospital";
+            toURL = "../finddoctor/finddoctor";
         }
         wx.navigateTo({
             url: toURL

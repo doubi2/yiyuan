@@ -57,7 +57,7 @@ Page({
         console.log(e);
     },
     /**
-     * 生命周期函数--监听页面加载
+     * 生命周期函数--监听页面加载0
      */
     onLoad: function (options) {
 

@@ -1,6 +1,8 @@
 {
     "pages": [
         "pages/index/index",
+        "pages/healthdata/healthdata",
+        "pages/OSHMS/OSHMS",
         "pages/myinfo/myinfo",
         "pages/record/record",
         "pages/abouthealth/abouthealth",
@@ -38,8 +40,8 @@
             {
                 "pagePath": "pages/abouthealth/abouthealth",
                 "text": "健康头条",
-                "iconPath": "icons/my_doctor.png",
-                "selectedIconPath": "icons/my_doctor_active.png"
+                "iconPath": "icons/headlines.png",
+                "selectedIconPath": "icons/headlines_active.png"
             },
             {
                 "pagePath": "pages/myinfo/myinfo",

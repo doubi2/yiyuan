@@ -1,0 +1,119 @@
+image{
+    width: 0rpx;
+    height: 0rpx;
+}
+.content{
+    width: 90%;
+    margin: 0 auto;
+    height: 1500rpx;
+}
+.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headtitle{
+    font-size: 55rpx;
+    margin-top: 20rpx;
+}
+.quality{
+    height: 110rpx;
+    padding-left: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30rpx;
+}
+.quality>image{
+    width:35rpx;
+    height: 35rpx;
+    margin-right: 30rpx;
+}
+.quality_h1{
+    font-size:30rpx;
+    font-weight:600;
+    height: 60%;
+    justify-content: flex-start;
+    padding-bottom: 8rpx;
+}
+.doctor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25rpx;
+    padding-bottom: 8rpx;
+}
+.doctor image{
+    width: 25rpx;
+    height: 25rpx;
+    margin-right: 8rpx;
+}
+.doctor image:nth-of-type(2){
+    margin-left: 50rpx;
+}
+.options{
+    margin-top: 50rpx;
+    height:210rpx;
+    border-radius: 8rpx;
+    box-shadow: 1rpx 1rpx 1rpx 1rpx #D9D9D9;
+    /*for Android*/
+    -webkit-box-shadow: 1px 1px 1px 1px #D9D9D9;
+    /*for IOS*/
+}
+.option{
+    padding-left: 30rpx;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.options_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:106rpx;
+    height: 106rpx;
+    border-radius: 53rpx;
+}
+.options_image image{
+    width: 100%;
+    height: 100%;
+}
+.option_text{
+    padding-left: 30rpx;
+    width: 65%;
+}
+.option_text1{
+    padding-bottom: 18rpx;
+    font-size: 38rpx;
+}
+.option_text :nth-of-type(2){
+    font-size: 28rpx;    
+}
+.options_image image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.option_green{
+    background: linear-gradient(#A8E86E, #76C52C);
+}
+.option_pink{
+    background: linear-gradient(#FA9F81, #FF7B66);
+}
+.option_greenblue{
+    background: linear-gradient(#5ADECB, #0BCBB4);
+}
+.menu_right{
+    width: 40rpx;
+    height: 40rpx;
+    margin-left: 15rpx;
+}
+.option_blue{
+    background: linear-gradient(rgb(26, 78, 190), rgb(14, 58, 179));
+}
+.option_violet{
+    background: linear-gradient(#9F79EE, #9B30FF);
+}
+.option_orange{
+    background: linear-gradient(#FFA54F, #FFA500);
+}
