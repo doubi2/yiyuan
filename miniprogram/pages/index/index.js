@@ -165,7 +165,7 @@ Page({
         if (Naviid == 0) { 
             toURL = "../finddoctor/finddoctor";
         }else if (Naviid == 1) {
-            toURL = "../hospital/hospital";
+            toURL = "../hospital/hospital?op=hospital";
         } else { 
             toURL = "../OSHMS/OSHMS";
         }

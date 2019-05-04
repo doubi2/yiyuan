@@ -14,9 +14,13 @@ page{
     width: 96%;
     margin: 30rpx 2%;
     height: auto;
-    padding: 20rpx 30rpx;
+    padding: 30rpx 30rpx;
     background-color: #ffffff;
     border-radius: 15rpx;
+    box-shadow: 0 0rpx 0rpx 1rpx #EDEDED;
+    /*for Android*/
+    -webkit-box-shadow: 0px 3px 5px 1px #EDEDED;
+    /*for IOS*/
 }
 .headlthitem_main{
     display: flex;
@@ -34,14 +38,14 @@ page{
     margin: 0 25rpx;
 }
 .data image{
-    width: 40rpx;
-    height: 40rpx;
+    width: 42rpx;
+    height: 42rpx;
 }
 .data :nth-of-type(2){
-    color: #AD9EFB;
+    color: #987DE6;
 }
 .data_title{
-    font-size: 33rpx;
+    font-size: 35rpx;
 }
 .iteminput{
     font-size: 45rpx;
@@ -59,19 +63,21 @@ page{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
 }
 .data_value :first-of-type{
-    font-size: 37rpx;
+    font-size: 42rpx;
     margin-right: 10rpx;
+    font-weight: 600;
 }
 .data_value :nth-of-type(2){
     font-size: 25rpx;
     color: #9F9F9F;
 }
 .item_data :nth-of-type(2){
-    font-size: 25rpx;
-    color: #9F9F9F;
+    font-size: 22rpx;
+    color: #ADADAD;
+    margin-top: 7rpx;
 }
 .headlth_plus{
     width: 60rpx;
@@ -86,4 +92,7 @@ page{
     font-weight: 200;
     color: #ffffff;
     padding-bottom: 3rpx;
+    box-shadow: 0 0rpx 0rpx 1rpx #D8C6FA;
+    /*for Android*/
+    -webkit-box-shadow: 0px 1px 1px 1px #D8C6FA;
 }

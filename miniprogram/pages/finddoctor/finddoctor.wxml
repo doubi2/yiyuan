@@ -8,7 +8,7 @@
             <view>按疾病找</view>
             <view>1890中疾病</view>
         </navigator>
-        <navigator class="setcenter bydisease byhospital" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        <navigator class="setcenter bydisease byhospital" target="" url="../hospital/hospital?op=doctor" hover-class="navigator-hover" open-type="navigate">
             <image src="../../icons/hospital.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
             <view>按医院找</view>
             <view>5445家医院</view>

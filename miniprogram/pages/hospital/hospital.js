@@ -1,64 +1,83 @@
 // pages/hospital/hospital.js
-Page({
+const app = getApp()
 
+Page({
     /**
      * 页面的初始数据
      */
     data: {
-        hospitals: [
+        departmentURL: "../department/department",
+        doctorinfoURL: "../doctorinfo/doctorinfo",
+        URL: "",
+        doctorinfosort: [
             {
                 id: 0,
-                hospitalname: "南华大学附一医院",
-                place: "三甲 综合",
+                title: "综合排序",
+                checked:false,
             },
             {
                 id: 1,
-                hospitalname: "湘雅二医院",
-                place: "三甲 综合",
+                title: "全国",
+                checked:false,
             },
             {
                 id: 2,
-                hospitalname: "南华大学附二医院",
-                place: "三甲 综合",
+                title: "筛选",
+                checked:false,
             },
-            {
-                id: 3,
-                hospitalname: "湘雅医院",
-                place: "三甲 综合",
-            },
-            {
-                id: 4,
-                hospitalname: "南华大学附属南华医院",
-                place: "三甲 综合",
-            },
-            {
-                id: 5,
-                hospitalname: "衡阳市中心医院",
-                place: "三甲 综合",
-            },
-            {
-                id: 6,
-                hospitalname: "湖南省肿瘤医院",
-                place: "三甲 综合",
-            },
-            {
-                id: 7,
-                hospitalname: "湖南省人民医院",
-                place: "三甲 综合",
-            },
-            {
-                id: 8,
-                hospitalname: "湖南省妇幼保健院",
-                place: "三甲 综合",
-            },
-        ]
+        ],
+        location: [
+           "湖南省","长沙市","株洲市","湘潭市","衡阳市","邵阳市","岳阳市","常德市","益阳市","郴州市","永州市","怀化市","娄底市","湘西州"
+        ],
+        place: -1,
+        hospitals: {}
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
+        let op = options.op;
+        let that = this;
+        if (op == 'doctor') {
+            that.setData({
+                URL:"../doctorinfo/doctorinfo",
+            }),
+            wx.setNavigationBarTitle({
+                title: "按医院找"
+            })
+        } else { 
+            that.setData({
+                URL:"../department/department",
+            }),
+            wx.setNavigationBarTitle({
+                title: "选择挂号医院"
+            })
+        }
+        
+        const db = wx.cloud.database()
+        // 查询当前用户所有的 counters
+        db.collection('hospitals').get({
+          success: res => {
+            this.setData({
+                hospitals: res.data[0]
+            })
+          },
+          fail: err => {
+            wx.showToast({
+              icon: 'none',
+              title: '查询记录失败'
+            })
+            console.error('[数据库] [查询记录] 失败：', err)
+          }
+        })
+    },
 
+    bindlocChange: function (e) { 
+        console.log(e.detail.value - 1)
+        this.setData({
+            place: e.detail.value - 1,
+        })
     },
 
     /**

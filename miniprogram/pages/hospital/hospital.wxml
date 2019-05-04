@@ -1,17 +1,34 @@
 <!--头部搜索框-->
 <HeadSearch search="搜索医院"></HeadSearch>
 <!--筛选-->
-<Sort></Sort>
+<view class="doctorinfo_sort " hover-class="none" hover-stop-propagation="false">
+    <view class="sort_block {{doctorinfosort[0].checked?'font_black':'font_gray4'}}" hover-class="none" hover-stop-propagation="false">
+        <view>{{doctorinfosort[0].title}}</view>
+        <image class="" src="{{checked?'../../icons/up_over.png':'../../icons/down.png'}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    </view>
+    <picker bindchange="bindlocChange" value="{{index}}" range="{{location}}">
+        <view class="sort_block {{doctorinfosort[1].checked?'font_black':'font_gray4'}}" hover-class="none" hover-stop-propagation="false" >
+            <view>{{location[place + 1 ]}}</view>
+            <image class="" src="{{checked?'../../icons/up_over.png':'../../icons/down.png'}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+        </view>
+    </picker>
+    <view class="sort_block {{doctorinfosort[2].checked?'font_black':'font_gray4'}}" hover-class="none" hover-stop-propagation="false">
+        <view>{{doctorinfosort[2].title}}</view>
+        <image class="" src="{{checked?'../../icons/up_over.png':'../../icons/down.png'}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+    </view>
+</view>
 <view class='hospital'>
     <view class="hospital_main">
-        <block wx:for="{{hospitals}}" wx:key="{{index}}">
-            <navigator class="hospitals_block" target="" url="../department/department" hover-class="navigator-hover" open-type="navigate">
-                <image class="" src="../../icons/hospitals.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
-                <view class="hospitalinfo">
-                    <view>{{item.hospitalname}}</view>
-                    <view>{{item.place}}</view>
-                </view>
-            </navigator>
+        <block wx:for="{{hospitals.list}}" wx:key="{{index}}">
+            <block wx:if="{{place=='-1'?true:item.id == place}}" wx:for="{{item.hospital}}" wx:key="{{index}}" wx:for-item="ho">
+                <navigator class="hospitals_block" target="" url="{{URL}}" hover-class="navigator-hover" open-type="navigate">
+                    <image class="" src="../../icons/hospitals.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                    <view class="hospitalinfo">
+                        <view>{{ho}}</view>
+                        <view>三甲</view>
+                    </view>
+                </navigator>
+            </block>
         </block>
     </view>
 </view>
