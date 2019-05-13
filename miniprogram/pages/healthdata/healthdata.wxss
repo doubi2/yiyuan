@@ -1,16 +1,30 @@
-page{
+page {
     background-color: #EDEDED;
 }
-.healthdata{
+
+.healthdata {
     width: 100%;
 }
-.healthdata_content{
-    
-}
-.data_main{
 
-}
-.headlthitem{
+.healthdata_content {}
+
+.mask{
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-color:#999;
+    z-index:100;
+    top:0;
+    left:0;
+    opacity:0.5;
+    -moz-opacity: 0.7;  
+  opacity: 0.70;  
+  filter: alpha(opacity=70); 
+  }
+
+.data_main {}
+
+.headlthitem {
     width: 96%;
     margin: 30rpx 2%;
     height: auto;
@@ -22,64 +36,78 @@ page{
     -webkit-box-shadow: 0px 3px 5px 1px #EDEDED;
     /*for IOS*/
 }
-.headlthitem_main{
+
+.headlthitem_main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.data{
+
+.data {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-.data view{
+
+.data view {
     margin: 0 25rpx;
 }
-.data image{
+
+.data image {
     width: 42rpx;
     height: 42rpx;
 }
-.data :nth-of-type(2){
+
+.data :nth-of-type(2) {
     color: #987DE6;
 }
-.data_title{
+
+.data_title {
     font-size: 35rpx;
 }
-.iteminput{
+
+.iteminput {
     font-size: 45rpx;
     font-weight: 600;
 }
-.item_data{
+
+.item_data {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
-.item_data view{
+
+.item_data view {
     margin: 0;
 }
-.data_value{
+
+.data_value {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
 }
-.data_value :first-of-type{
+
+.data_value_item1 {
     font-size: 42rpx;
     margin-right: 10rpx;
     font-weight: 600;
 }
-.data_value :nth-of-type(2){
+
+.data_value_item2 {
     font-size: 25rpx;
     color: #9F9F9F;
 }
-.item_data :nth-of-type(2){
+
+.item_data :nth-of-type(2) {
     font-size: 22rpx;
     color: #ADADAD;
     margin-top: 7rpx;
 }
-.headlth_plus{
+
+.headlth_plus {
     width: 60rpx;
     height: 60rpx;
     line-height: 60rpx;
@@ -96,3 +124,118 @@ page{
     /*for Android*/
     -webkit-box-shadow: 0px 1px 1px 1px #D8C6FA;
 }
+
+.inputText{
+    width: 100%;
+    height: 120rpx;
+}
+.inputContent{
+    width: 100%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 25rpx;
+}
+.imageArea{
+    width: 80rpx;
+    height: 80rpx;
+    border-radius: 40rpx;
+    margin: 10rpx 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputContent image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.equipment{
+    flex: 1;
+    flex-direction: column;
+}
+.voice{
+    flex: 1;
+    flex-direction: column;
+}
+.manual{
+    flex: 1;
+    flex-direction: column;
+}
+
+.dialog{
+    width: 500rpx;
+    height: 400rpx;
+    background-color: #ffffff;
+    border-radius:30rpx;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200rpx;
+    margin-left: -250rpx;
+    z-index: 999;
+}
+.dialog_head{
+    height: 80rpx;
+    border-bottom: solid #999 1px;
+}
+
+.dialog_input{
+    height: 220rpx;
+}
+.dialog_input_unit{
+    width: 300rpx;
+    height: 200rpx;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30rpx; 
+}
+.dialog_input_main{
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+}
+.dialog_input_main :first-of-type{
+    flex: 3;
+    height: 80rpx;
+    border-radius: 20rpx;
+    border: solid #9F9F9F 1xp;
+    font-size: 33rpx;
+    color: #987DE6;
+}
+.dialog_input_main :nth-of-type(2){
+    flex: 2;
+    font-size: 25rpx;
+}
+.dialog_button{
+    width: 100%;
+    height: 100rpx;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: solid #9F9F9F 1px;
+    font-size: 35rpx;
+}
+.dialog_button view:nth-of-type(2){
+    flex: 1;
+    height: 100rpx;
+    background-color: #07C160;
+    border-right: solid #9F9F9F 1px;
+    border-bottom-right-radius: 30rpx;
+    color: #ffffff;
+}
+.dialog_button view:first-of-type{
+    border-bottom-right-radius: 30rpx;
+    height: 100rpx;
+    flex: 1;
+    color:#7B7B7B;
+}
+

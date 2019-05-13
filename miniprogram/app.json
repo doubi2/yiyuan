@@ -1,11 +1,11 @@
 {
     "pages": [
-        "pages/index/index",
-        "pages/hospital/hospital",
-        "pages/healthdata/healthdata",
         "pages/OSHMS/OSHMS",
-        "pages/myinfo/myinfo",
+        "pages/index/index",
+        "pages/healthdata/healthdata",
         "pages/record/record",
+        "pages/hospital/hospital",
+        "pages/myinfo/myinfo",
         "pages/abouthealth/abouthealth",
         "pages/examination/examination",
         "pages/orthopedics/ orthopedics",
@@ -14,7 +14,6 @@
         "pages/inquiry/inquiry",
         "pages/doctorinfo/doctorinfo",
         "pages/finddoctor/finddoctor",
-        "pages/doctor/doctor",
         "pages/search/search",
         "pages/fonddoctor/fonddoctor"
     ],
@@ -22,7 +21,7 @@
         "backgroundColor": "#ffffff",
         "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#45A0EF",
-        "navigationBarTitleText": "智慧医疗",
+        "navigationBarTitleText": "e医疗",
         "navigationBarTextStyle": "black"
     },
     "tabBar": {
@@ -53,7 +52,7 @@
     },
     "permission": {
         "scope.userLocation": {
-            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+            "desc": "你的位置信息将用于小程序给您提供更好的服务"
         }
     },
     "sitemapLocation": "sitemap.json"

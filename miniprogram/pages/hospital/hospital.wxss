@@ -1,7 +1,6 @@
-.hospital{
+.hospital {}
 
-}
-.hospitals_block{
+.hospitals_block {
     width: 100%;
     height: 150rpx;
     display: flex;
@@ -10,20 +9,24 @@
     align-items: center;
     border-bottom: solid #E7EAEF 1px;
 }
-.hospitals_block image{
+
+.hospitals_block image {
     width: 80rpx;
     height: 80rpx;
     margin: 0 30rpx;
 }
-.hospitalinfo :first-of-type{
+
+.hospitalinfo :first-of-type {
     font-size: 35rpx;
     font-weight: 600;
 }
-.hospitalinfo :nth-of-type(2){
+
+.hospitalinfo :nth-of-type(2) {
     margin-top: 7rpx;
     font-size: 30rpx;
 }
-.doctorinfo_sort{
+
+.doctorinfo_sort {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -33,14 +36,16 @@
     border-bottom: solid #E7EAEF 1px;
     padding: 0 20rpx;
 }
-.sort_block{
+
+.sort_block {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 28rpx;
 }
-.sort_block image{
+
+.sort_block image {
     width: 28rpx;
     height: 28rpx;
 }

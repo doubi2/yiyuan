@@ -2,8 +2,8 @@
      <view class="user">
           <!-- 需要使用 button 来授权登录 -->
           <view class="userAvatar">
-               <image src="{{state ? userinfo.avatarUrl : defaultPortrait}}"></image>
-               <button wx:if="{{false}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" hover-class="none">微信登录</button>
+               <image src="{{!isHide ? userinfo.avatarUrl : defaultPortrait}}"></image>
+               <button wx:if="{{isHide}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" type ="primary" hover-class="none">微信登录</button>
                <view wx:else>{{userinfo.nickName}}</view>
           </view>
      </view>
@@ -16,7 +16,7 @@
      <view class="myinfo_functions">
           <view class="functions">
                <block wx:for="{{myinfo_functions}}" wx:key="{{index}}">
-                    <navigator class="function_item" target="" url="" hover-class="navigator-hover" open-type="navigate">
+                    <navigator class="function_item" target="" url="" hover-class="navigator-hover" open-type="navigate" bindtap='hintInfo'>
                          <view class="function">
                               <image class="" src="{{item.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
                               <view>{{item.title}}</view>
@@ -25,14 +25,14 @@
                </block>
           </view>
      </view>
-     <view class="private_doctor">
-          <view class="all_order">
+     <view class="private_doctor" bindtap='hintInfo'>
+          <view class="all_order" >
                <view>私人医生专区</view>
                <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
           </view>
      </view>
      <view class="vip_doctor">
-          <view class="all_order">
+          <view class="all_order" bindtap='hintInfo'>
                <view>VIP会员专区</view>
                <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
           </view>
@@ -51,4 +51,7 @@
                <image class="" src="../../icons/sidebar.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
           </view>
      </view>
+
+     <button class='backButton' type="warn" bindtap='backLogin'>退出登录</button>
+     <van-toast id="van-toast" />
 </view>

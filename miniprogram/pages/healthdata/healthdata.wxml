@@ -1,26 +1,73 @@
 <view class="healthdata" hover-class="none" hover-stop-propagation="false">
     <view class="healthdata_content">
         <view class="data_main">
-            <block wx:for="{{headlthitem}}" wx:key="{{index}}">
+            <block wx:for="{{headlthitem[0].pageInfo}}" wx:key="{{index}}">
                 <view class="headlthitem">
                     <view class="headlthitem_main">
                         <view class="data">
                             <image class="" src="{{item.imagePath}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
                             <view class="data_title">{{item.title}}</view>
-                            <view class="iteminput" wx:if="{{!item.input}}">--</view>
+                            <view class="iteminput" wx:if="{{!item.inputed}}">--</view>
                                 <view wx:else class="item_data">
-                                    <view class="data_value">
-                                        <view>{{item.value}}</view>
-                                        <view>{{item.unit}}</view>
+                                    <view class="data_value" >
+                                        <block wx:for="{{headlthitem[1].userData[index].data}}" wx:key="{{index}}" wx:for-item="data_item" wx:for-key="index2">
+                                            <view class="data_value_item1">{{data_item.value}}</view>
+                                            <view class="data_value_item2">{{data_item.hint}}</view>
+                                        </block>
                                     </view>
-                                    <view>{{item.time}}</view>
+                                    <view>今天</view>
                                 </view>
                         </view>
-                        <view class="headlth_plus">＋</view> 
+                        <view class="headlth_plus" data-id="{{item.id}}" id="{{item.id}}" bindtap="inputData">{{item.inputing?'×':'＋'}}</view>
+                    </view>
+                    <view hidden="{{!item.inputing}}" class="inputText">
+                        <view class="inputContent">
+                            <view class="equipment setcenter" bindtap="hintInfo">
+                                <view class="imageArea" style="background-color: #4FD2C2;">
+                                    <image class="" src="../../icons/equipment.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                                </view>
+                                <view>设备</view>
+                            </view>
+                            <view class="voice setcenter" bindtap="hintInfo">
+                                <view class="imageArea" style="background-color: #7D9BF1;">
+                                    <image class="" src="../../icons/inputVoice.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                                </view>
+                                <view>语音</view>
+                            </view>
+                            <view class="manual setcenter" bindtap="openPopup"  data-id="{{item.id}}" id="{{item.id}}">
+                                <view class="imageArea" style="background-color: #FFAC52;">
+                                    <image class="" src="../../icons/manual.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                                </view>
+                                <view >手动</view>
+                            </view>
+                        </view>
                     </view>
                 </view>
             </block>
         </view>
     </view>
+    <view class='mask' hidden="{{dialogState}}"></view>
+    <form class="dialog" report-submit="false" bindsubmit="" bindreset="" hidden="{{dialogState}}">
+        <view class="dialog_head setcenter">
+            请输入
+        </view>
+        <view class="dialog_input setcenter">
+            <view class="dialog_input_unit">
+                <block wx:for="{{dialog_unit}}" wx:key="{{index}}">
+                    <view class="dialog_input_main setcenter">
+                        <view><input class=""  type="number"  placeholder="请输入"  placeholder-class="input-placeholder"
+                         maxlength="10" id="{{index}}" bindinput="getText" value="{{inputTxt}}">
+                        </input></view>
+                        <view>{{item}}</view>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view class="dialog_button">
+            <view class="setcenter" bindtap="dialogClose">取消</view>
+            <view class="setcenter" bindtap="dialogSave">保存</view>
+        </view>
+    </form>
+    <van-toast id="van-toast" />
 </view>
   

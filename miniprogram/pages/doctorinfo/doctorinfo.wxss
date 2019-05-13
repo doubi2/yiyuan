@@ -47,6 +47,7 @@
     border-radius: 45rpx;
 }
 .doctor_info{
+    width: 100%;
     padding-left: 20rpx;
 }
 .doctor_info_main>view{
@@ -143,6 +144,7 @@
     border: solid #389487 1px;
     border-radius: 5rpx;
     font-weight: 600; 
+    margin-right: 60rpx;
 }
 .askway{
     font-size: 28rpx;

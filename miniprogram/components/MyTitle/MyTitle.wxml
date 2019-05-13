@@ -1,15 +1,9 @@
 <view class='main'>
     <view class="myTitle">
-        <!-- logo区 -->
         <view class="logo">
-            智慧医疗
+            e医疗
         </view>
-        <!-- 导航 -->
-        <view class="navi">
-            导航
-        </view>
-        <!-- 我的 -->
-        <navigator class="my">
+        <navigator class="my" url='../../pages/myinfo/myinfo' open-type="switchTab">
             我的
         </navigator>
     </view>

@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "健康数据",
-  "usingComponents": {}
+  "usingComponents": {
+    "van-toast": "../../dist/toast/index"
+  }
 }

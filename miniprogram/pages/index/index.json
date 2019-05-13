@@ -1,6 +1,7 @@
 {
-    "navigationBarTitleText": "智慧医疗",
+    "navigationBarTitleText": "e医疗",
     "usingComponents": {
-        "MyTitle": "../../components/MyTitle/MyTitle"
+        "MyTitle": "../../components/MyTitle/MyTitle",
+        "van-toast": "../../dist/toast/index"
     }
 }

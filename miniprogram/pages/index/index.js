@@ -1,3 +1,4 @@
+import Toast from '../../dist/toast/toast';
 Page({
 
     /**
@@ -12,28 +13,27 @@ Page({
         indicator_color: "D3D3D3", //指示点颜色
         indicator_active_color: "white", //当前选中的指示点颜色
         imgUrls: ["../../images/swiper_tem_1.jpg", "../../images/swiper_tem_2.jpg", "../../images/swiper_tem_3.jpg"], //轮播图地址
-        main_functions:[
-            {   
+        main_functions: [{
                 id: 0,
-                title:"门诊医生",
-                imagePath:"../../icons/doctor.png",
-                introduce:"300家名医"
+                title: "门诊医生",
+                imagePath: "../../icons/doctor.png",
+                introduce: "300家名医"
             },
             {
                 id: 1,
-                title:"医院挂号",
-                imagePath:"../../icons/registration.png",
-                introduce:"无需排队"
+                title: "医院挂号",
+                imagePath: "../../icons/registration.png",
+                introduce: "无需排队"
             },
             {
                 id: 2,
-                title:"健康管理",
-                imagePath:"../../icons/manage.png",
-                introduce:"你的智能管家"
+                title: "健康管理",
+                imagePath: "../../icons/manage.png",
+                introduce: "你的智能管家"
             },
         ],
-        functions: [        //功能区介绍
-            {   
+        functions: [ //功能区介绍
+            {
                 id: 0,
                 title: "义诊",
                 context: "免费诊疗"
@@ -64,48 +64,45 @@ Page({
                 context: "信息解读，及时反馈"
             }
         ],
-        forms: [           //每日表单区
+        forms: [ //每日表单区
             {
                 id: 0,
-                title:"常见病门诊",
+                title: "常见病门诊",
                 context: "无需等待"
             },
             {
                 id: 1,
-                title:"儿科门诊",
+                title: "儿科门诊",
                 context: "1人候诊中"
             },
             {
                 id: 2,
-                title:"生长发育诊",
+                title: "生长发育诊",
                 context: "无需等待"
             }
         ],
-        inquiry_introduce:[
-            {
+        inquiry_introduce: [{
                 id: 0,
                 title: "视频/电话",
                 imagePath: "../../icons/video.png",
-                introduce:"在线接诊"
+                introduce: "在线接诊"
             },
             {
                 id: 1,
                 title: "三甲医院",
                 imagePath: "../../icons/ECG.png",
-                introduce:"在线接诊"
+                introduce: "在线接诊"
             },
             {
                 id: 2,
                 title: "价格低",
                 imagePath: "../../icons/price.png",
-                introduce:"在线接诊"
+                introduce: "在线接诊"
             }
         ],
-        dynamic: [
-            {   
-                dy_id:0,
-                main: [
-                    {
+        dynamic: [{
+                dy_id: 0,
+                main: [{
                         id: 0,
                         type: "[极速图文]",
                         content: "南华大学附属第一医院  肛肠科 谢三喜",
@@ -129,9 +126,8 @@ Page({
                 ]
             },
             {
-                dy_id:1,
-                main: [
-                    {
+                dy_id: 1,
+                main: [{
                         id: 0,
                         type: "[极速图文]",
                         content: "衡阳中医院 外科 凌旭",
@@ -156,18 +152,25 @@ Page({
             }
         ]
     },
-
+    //提示暂未开发
+    hintInfo: function (e) {
+        const toast = Toast.fail({
+            duration: 1000,       // 持续展示 toast
+            forbidClick: true, // 禁用背景点击
+            message: '暂未开发！',
+        });
+    },
     //导航栏部分的事件处理函数
     bindNaviTap: function (e) {
         var Naviid = e.currentTarget.dataset.id;
         console.log(Naviid);
         var toURL;
-        if (Naviid == 0) { 
+        if (Naviid == 0) {
             toURL = "../finddoctor/finddoctor";
-        }else if (Naviid == 1) {
+        } else if (Naviid == 1) {
             toURL = "../hospital/hospital?op=hospital";
-        } else { 
-            toURL = "../OSHMS/OSHMS";
+        } else {
+            toURL = "../OSHMS/OSHMS?state=true";
         }
         wx.navigateTo({
             url: toURL
@@ -177,70 +180,74 @@ Page({
         var Naviid = e.currentTarget.dataset.id;
         console.log(Naviid);
         var toURL;
-        if (Naviid == 0) { 
+        if (Naviid == 0) {
             toURL = "../volunteer/volunteer";
-        }else if (Naviid == 5) {
+            wx.navigateTo({
+                url: toURL
+            })
+        } else if (Naviid == 5) {
             toURL = "../volunteer/volunteer";
-        } else { 
-            toURL = "../finddoctor/finddoctor";
+            wx.navigateTo({
+                url: toURL
+            })
+        } else {
+            this.hintInfo();
         }
-        wx.navigateTo({
-            url: toURL
-        })
+
     },
     /**
      * 生命周期函数--监听页面加载
      */
-    onLoad: function(options) {
+    onLoad: function (options) {
 
     },
 
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
-    onReady: function() {
+    onReady: function () {
 
     },
 
     /**
      * 生命周期函数--监听页面显示
      */
-    onShow: function() {
+    onShow: function () {
 
     },
 
     /**
      * 生命周期函数--监听页面隐藏
      */
-    onHide: function() {
+    onHide: function () {
 
     },
 
     /**
      * 生命周期函数--监听页面卸载
      */
-    onUnload: function() {
+    onUnload: function () {
 
     },
 
     /**
      * 页面相关事件处理函数--监听用户下拉动作
      */
-    onPullDownRefresh: function() {
+    onPullDownRefresh: function () {
 
     },
 
     /**
      * 页面上拉触底事件的处理函数
      */
-    onReachBottom: function() {
+    onReachBottom: function () {
 
     },
 
     /**
      * 用户点击右上角分享
      */
-    onShareAppMessage: function() {
+    onShareAppMessage: function () {
 
     }
 })

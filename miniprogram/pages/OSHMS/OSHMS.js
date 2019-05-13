@@ -1,63 +1,90 @@
 // pages/index/index.js
+import Dialog from '../../dist/dialog/dialog';
+const app = getApp()
 Page({
-
+ 
     /**
      * 页面的初始数据
      */
     data: {
-        options:[
-            {
-                id: 0,
-                title: "健康档案",
-                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/record.png",
-                introduce: "个人健康档案",
-                className: "option_greenblue"
-            },
-            {
-                id: 1,
-                title: "健康数据",
-                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/healthdata.png",
-                introduce: "记录你每一天的健康信息",
-                className: "option_green"
-            },
-            {
-                id: 2,
-                title: "我的评估",
-                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/evaluate.png",
-                introduce: "准确、全面评估你的健康状态",
-                className: "option_pink"
-            },
-            {
-                id: 3,
-                title: "体检报告",
-                imagePath: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/images/physicalexamination.png",
-                introduce: "保存体检报告在线为你解答",
-                className: "option_violet"
-            }
-        ]
+        options: {}
     },
-    optionsnav: function (e) { 
+    optionsnav: function (e) {
         var Naviid = e.currentTarget.dataset.id;
-        console.log(Naviid);
         var toURL;
-        if (Naviid == 0) { 
+        if (Naviid == 0) {
             toURL = "../record/record";
-        }else if(Naviid == 1){ 
+            wx.navigateTo({
+                url: toURL
+            });
+        } else if (Naviid == 1) {
             toURL = "../healthdata/healthdata";
-        }else if (Naviid == 3) {
+            wx.navigateTo({
+                url: toURL
+            });
+        } else if (Naviid == 2) {
+            Dialog.alert({
+                message: '请记录您的健康数据在进行评估'
+            }).then(() => {
+                // on close
+            });
+        } else if (Naviid == 3) {
             toURL = "../examination/examination";
-        }else if (Naviid == 3) {
-            toURL = "../examination/examination";
-        } 
-        wx.navigateTo({
-            url: toURL
-        })
+            wx.navigateTo({
+                url: toURL
+            });
+        }
+
     },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-
+        let state = false;
+        let op = options.state;
+        let that = this;
+        const db = wx.cloud.database()
+        // 查询当前用户所有的 counters
+        db.collection('state').get({
+            success: res => {
+                state = res.data[0].pageState;
+                if (res.data[0].pageState) {
+                    if (op != "true") {
+                        wx.switchTab({
+                            url: "../index/index"
+                        });
+                    }
+                }
+            },
+            fail: err => {
+                wx.showToast({
+                    icon: 'none',
+                    title: '查询记录失败'
+                })
+                console.error('[数据库] [查询记录] 失败：', err)
+            }
+        });
+        db.collection('options').get({
+            success: res => {
+                console.info(op);
+                if (op == "true") {
+                    that.setData({
+                        options: res.data[0].option1
+                    });
+                } else {
+                    that.setData({
+                        options: res.data[0].option2
+                    });
+                }
+            },
+            fail: err => {
+                wx.showToast({
+                    icon: 'none',
+                    title: '查询记录失败'
+                })
+                console.error('[数据库] [查询记录] 失败：', err)
+            }
+        })
     },
 
     /**

@@ -65,7 +65,7 @@
                                 <block wx:for="{{item.main}}" wx:key="{{item.main.id}}" wx:for-item="info">
                                     <view class="dynamic_content">
                                         <view class="font_gray2">{{info.type}}</view>
-                                        <view>{{info.content}}医生 接诊患者：{{info.patient}}</view>
+                                        <view>{{info.content}}{{info.patient}}</view>
                                         <view class="font_gray2">{{info.time}}</view>
                                     </view>
                                 </block>
@@ -76,4 +76,5 @@
             </view>
         </view>
     </view>
+    <van-toast id="van-toast" />
 </view>

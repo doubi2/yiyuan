@@ -22,9 +22,9 @@ page{
 }
 .userAvatar button{
     width: 200rpx;
-    height: 50rpx;
+    height: 70rpx;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin-left: 30rpx;
 }
@@ -100,5 +100,10 @@ page{
 }
 .install{
     margin-top: 20rpx;
-    margin-bottom: 100rpx;
+    margin-bottom: 20rpx;
+}
+.backButton{
+    width: 90%;
+    height: 80rpx;
+    margin: 40rpx auto;
 }

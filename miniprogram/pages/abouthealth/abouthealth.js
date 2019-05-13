@@ -13,7 +13,7 @@ Page({
                 imagePath2: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/1_2.jpg",
                 imagePath3: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/1_3.jpg",
                 author: "网易养生",
-                commentnum:"631"
+                commentnum:"102"
             },
             {
                 id: 1,
@@ -22,7 +22,7 @@ Page({
                 imagePath2: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/2_2.jpg",
                 imagePath3: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/2_3.jpg",
                 author: "健康知识",
-                commentnum:"5761"
+                commentnum:"95"
             },
             {
                 id: 2,
@@ -31,7 +31,7 @@ Page({
                 imagePath2: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/3_2.png",
                 imagePath3: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/3_3.png",
                 author: "本草世界",
-                commentnum:"1万"
+                commentnum:"53"
             },
             {
                 id: 3,
@@ -40,7 +40,7 @@ Page({
                 imagePath2: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/4_2.jpg",
                 imagePath3: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/4_3.jpg",
                 author: "健康知识",
-                commentnum:"2136"
+                commentnum:"14"
             },
             {
                 id: 4,
@@ -49,7 +49,7 @@ Page({
                 imagePath2: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/5_2.jpg",
                 imagePath3: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/5_3.jpg",
                 author: "养生养身",
-                commentnum:"3410"
+                commentnum:"25"
             },
             {
                 id: 5,
@@ -58,7 +58,7 @@ Page({
                 imagePath2: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/6_2.jpg",
                 imagePath3: "cloud://hemeidan-fw3xg.6865-hemeidan-fw3xg/healthImages/6_3.jpg",
                 author: "薄荷健康",
-                commentnum:"6310"
+                commentnum:"52"
             },
 
         ]
